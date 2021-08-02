@@ -80,7 +80,7 @@ button {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(material/lc.jpg);
+  background: url(material/resize/lclclc.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 15%;
@@ -91,7 +91,7 @@ button {
 .clouds {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0%;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -102,8 +102,8 @@ button {
   position: absolute;
   bottom: -5%;
   max-width: 100%;
-  -webkit-animation: cloud calc(3s * (var(--i))) linear infinite;
-          animation: cloud calc(3s * (var(--i))) linear infinite;
+  -webkit-animation: cloud calc(5s * (var(--i))) linear infinite;
+          animation: cloud calc(5s * (var(--i))) linear infinite;
 }
 
 @-webkit-keyframes cloud {
@@ -265,8 +265,8 @@ button {
       opacity: 1;
     }
     100% {
-      -webkit-transform: scale(10);
-              transform: scale(10);
+      -webkit-transform: scale(7);
+              transform: scale(7);
     }
   }
   @keyframes cloud {
@@ -280,8 +280,8 @@ button {
       opacity: 1;
     }
     100% {
-      -webkit-transform: scale(10);
-              transform: scale(10);
+      -webkit-transform: scale(7);
+              transform: scale(7);
     }
   }
   .navbar__container {
@@ -301,7 +301,7 @@ button {
     top: 0;
     right: 0;
     height: 100%;
-    width: 60%;
+    width: 80%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -319,7 +319,7 @@ button {
     display: inline-block;
   }
   .nav__list .logohome img {
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
   .nav__list .ri-close-fill {
@@ -347,39 +347,6 @@ button {
   }
 }
 
-@media screen and (max-width: 414px) {
-  @-webkit-keyframes cloud {
-    0% {
-      opacity: 0;
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-    25%,
-    75% {
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scale(15);
-              transform: scale(15);
-    }
-  }
-  @keyframes cloud {
-    0% {
-      opacity: 0;
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-    25%,
-    75% {
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scale(15);
-              transform: scale(15);
-    }
-  }
-}
-
 @media screen and (max-width: 425px) {
   .nav__list {
     row-gap: 1.7rem;
@@ -395,8 +362,8 @@ button {
       opacity: 1;
     }
     100% {
-      -webkit-transform: scale(25);
-              transform: scale(25);
+      -webkit-transform: scale(30);
+              transform: scale(30);
     }
   }
   @keyframes cloud {
@@ -410,8 +377,8 @@ button {
       opacity: 1;
     }
     100% {
-      -webkit-transform: scale(25);
-              transform: scale(25);
+      -webkit-transform: scale(30);
+              transform: scale(30);
     }
   }
 }
@@ -548,7 +515,7 @@ button {
 }
 
 .section__img img {
-  width: 350px;
+  width: 300px;
 }
 
 .operation {
@@ -569,6 +536,7 @@ button {
   margin-bottom: 4rem;
   font-weight: 500;
   font-size: 20px;
+  padding: 30px;
   -webkit-transition: border 0.4s;
   transition: border 0.4s;
 }
@@ -622,7 +590,7 @@ button {
   max-width: 1400px;
   height: 100%;
   gap: 2rem;
-  padding: 10px;
+  padding: 30px;
   margin: 1rem auto 6rem;
 }
 
@@ -678,9 +646,7 @@ button {
 }
 
 .operation__field .operation__meal .operation__description .operation__price {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  float: right;
   font-weight: 600;
   font-size: 18px;
   color: #871221;
@@ -719,7 +685,7 @@ button {
 }
 
 .about__field {
-  padding: 20px;
+  padding: 30px;
   line-height: 1.5;
   margin: 1rem auto 3rem;
 }
@@ -736,7 +702,7 @@ button {
 }
 
 .iframe__container iframe {
-  padding: 20px;
+  padding: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -747,7 +713,7 @@ button {
 }
 
 .slider {
-  height: 650px;
+  height: 600px;
   margin: auto;
   position: relative;
   width: 90%;
@@ -755,8 +721,6 @@ button {
   display: grid;
   place-items: center;
   overflow: hidden;
-  -webkit-perspective: 500px;
-          perspective: 500px;
 }
 
 .slider::after, .slider::before {
@@ -782,26 +746,21 @@ button {
 }
 
 .slider img {
-  width: 100%;
+  max-width: 100%;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
 }
 
-.slider img:hover {
-  -webkit-transform: translateZ(20px);
-          transform: translateZ(20px);
-}
-
 .slider .slider-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc(500px * 8);
+  width: calc(600px * 8);
   -webkit-animation: scroll1 25s linear infinite;
           animation: scroll1 25s linear infinite;
-  padding: 30px;
+  padding: 15px;
 }
 
 .slider .slider-track:hover {
@@ -1049,12 +1008,12 @@ button {
     bottom: -0.5rem;
     right: 1.2rem;
   }
-}
-
-.footer-wrap .footer__info,
-.footer-wrap .footer__socials {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  .operation__field .footer-wrap .footer__info,
+  .operation__field .footer-wrap .footer__socials {
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 @media screen and (max-width: 375px) {
