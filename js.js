@@ -4,7 +4,7 @@
 // navbar
 const navlist = document.querySelector('.nav__list')
 const btnNavListOpen = document.querySelector('.nav__toggle')
-const btnNavListClose = document.querySelector('.ri-close-fill')
+const btnNavListClose = document.querySelector('.nav--close')
 const navbarContainer = document.querySelector('.navbar__container')
 const navItems = document.querySelectorAll('.nav__items')
 
@@ -48,7 +48,6 @@ tabsContainer.addEventListener('click', function (e) {
   const clicked = e.target.closest('.operation__tab')
 
   console.log(clicked)
-  console.log(clicked.dataset.tab)
   // GUARD CLAUSE
   if (!clicked) return
   // remove active
@@ -60,8 +59,44 @@ tabsContainer.addEventListener('click', function (e) {
   })
   // activate tab
   clicked.classList.add('operation__tab--active')
+
   // active content
   document
     .querySelector(`.operation__field--${clicked.dataset.tab}`)
     .classList.add('operation__field--active')
 })
+
+// CCOOKIE MESSAGE
+
+const cookieContainer = document.querySelector('.cookie__message')
+const cookieBtn = document.querySelector('.cookie__btn--open')
+const cookieClose = document.querySelector('.cookie__btn--close')
+
+cookieBtn.addEventListener('click', () => {
+  cookieContainer.classList.remove('active')
+  localStorage.setItem('cookieBannerDisplayed', 'true')
+})
+cookieClose.addEventListener('click', function () {
+  cookieContainer.remove()
+})
+
+setTimeout(() => {
+  if (!localStorage.getItem('cookieBannerDisplayed')) {
+    cookieContainer.classList.add('active')
+  }
+}, 2000)
+
+// PROMO
+
+const promoClose = document.querySelector('.promo--close')
+const promotionContainer = document.querySelector('.promotion')
+const promotionOverlay = document.querySelector('.promotion__overlay')
+promoClose.addEventListener('click', function () {
+  promotionContainer.remove()
+  promotionOverlay.classList.add('hidden')
+})
+
+setTimeout(function () {
+  promotionContainer.classList.remove('hidden')
+  promotionOverlay.classList.remove('hidden')
+}, 6000)
