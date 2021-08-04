@@ -42,7 +42,7 @@ navItems.forEach(function (item) {
   })
 })
 
-// TAB MENU
+////////////////////////////// TAB MENU
 
 tabsContainer.addEventListener('click', function (e) {
   const clicked = e.target.closest('.operation__tab')
@@ -66,7 +66,7 @@ tabsContainer.addEventListener('click', function (e) {
     .classList.add('operation__field--active')
 })
 
-// CCOOKIE MESSAGE
+//////////////////////////////////////// CCOOKIE MESSAGE
 
 const cookieContainer = document.querySelector('.cookie__message')
 const cookieBtn = document.querySelector('.cookie__btn--open')
@@ -86,7 +86,7 @@ setTimeout(() => {
   }
 }, 2000)
 
-// PROMO
+////////////////////////////////////////// PROMO
 
 const promoClose = document.querySelector('.promo--close')
 const promotionContainer = document.querySelector('.promotion')
@@ -96,7 +96,41 @@ promoClose.addEventListener('click', function () {
   promotionOverlay.classList.add('hidden')
 })
 
-setTimeout(function () {
-  promotionContainer.classList.remove('hidden')
-  promotionOverlay.classList.remove('hidden')
-}, 6000)
+// setTimeout(function () {
+//   promotionContainer.classList.remove('hidden')
+//   promotionOverlay.classList.remove('hidden')
+// }, 6000)
+
+///////////////////////////////////////// SMOOTH SCROLLING
+
+const navList = document.querySelector('.nav__list')
+
+navList.addEventListener('click', function (e) {
+  e.preventDefault()
+
+  if (e.target.classList.contains('nav__link')) {
+    const id = e.target.getAttribute('href')
+    document.querySelector(id).scrollIntoView({ behavior: 'smooth' })
+  }
+})
+
+////////////////////////////////////////////// REVEAL SECTION
+const allSections = document.querySelectorAll('.section')
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries
+  if (!entry.isIntersecting) return
+
+  entry.target.classList.remove('section--hidden')
+  observer.unobserve(entry.target)
+}
+
+const observerSection = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.1,
+})
+
+allSections.forEach(function (section) {
+  observerSection.observe(section)
+  section.classList.add('section--hidden')
+})

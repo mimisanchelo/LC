@@ -12,6 +12,8 @@
 .section {
   padding: 5rem 0 3rem;
   border-bottom: 1px solid rgb(206, 206, 206);
+
+  transition: transform 1s, opacity 1s;
 }
 .container {
   max-width: 968px;
@@ -21,6 +23,9 @@
 }
 
 // HEADER
+html {
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
 }
@@ -354,6 +359,11 @@ body {
 }
 
 // RESERVATION
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 .reservation {
   display: flex;
   align-items: center;
@@ -365,7 +375,7 @@ body {
 
 .reservation__container {
   text-align: center;
-  padding: 2rem 2rem 4rem;
+  padding: 0rem 2rem;
   line-height: 1.5;
   max-width: 900px;
 }
@@ -375,6 +385,10 @@ body {
 }
 .reservation__note {
   background-color: rgb(200, 200, 200);
+  padding: 3rem 0rem;
+}
+.reservation__info {
+  padding: 0 2rem;
 }
 
 // KITCHEN HOURS
@@ -437,7 +451,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 5rem auto 5rem;
+  margin: 1rem auto 4rem;
 }
 .section__img {
   img {
@@ -448,6 +462,24 @@ body {
   max-width: 100rem;
   margin: auto;
   position: relative;
+}
+.btn__download {
+  background-color: rgb(220, 220, 220);
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 10px;
+  color: hsl(352, 77, 35);
+  padding: 10px 20px;
+  margin: 5rem 0rem 0rem;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  &:hover {
+    background-color: rgb(200, 200, 200);
+    color: hsl(352, 77, 40);
+  }
+  &:active {
+    transform: scale(0.98);
+  }
 }
 
 // BUTTONS
@@ -821,13 +853,16 @@ body {
     background: rgba(144, 38, 0, 0.7);
   }
 }
+
 @media screen and (max-width: 1300px) {
   .operation__field {
     justify-content: center;
     align-items: center;
   }
 }
-
+.ri-arrow-down-s-line {
+  color: rgba(144, 38, 0, 1);
+}
 @media screen and (max-width: 1024px) {
   .operation__tab-container {
     & > button {
