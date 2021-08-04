@@ -96,10 +96,10 @@ promoClose.addEventListener('click', function () {
   promotionOverlay.classList.add('hidden')
 })
 
-// setTimeout(function () {
-//   promotionContainer.classList.remove('hidden')
-//   promotionOverlay.classList.remove('hidden')
-// }, 6000)
+setTimeout(function () {
+  promotionContainer.classList.remove('hidden')
+  promotionOverlay.classList.remove('hidden')
+}, 6000)
 
 ///////////////////////////////////////// SMOOTH SCROLLING
 
@@ -115,6 +115,7 @@ navList.addEventListener('click', function (e) {
 })
 
 ////////////////////////////////////////////// REVEAL SECTION
+
 const allSections = document.querySelectorAll('.section')
 
 const revealSection = function (entries, observer) {
