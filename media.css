@@ -1,4 +1,34 @@
 @media screen and (max-width: 950px) {
+  @-webkit-keyframes cloud {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    25%,
+    75% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(7);
+              transform: scale(7);
+    }
+  }
+  @keyframes cloud {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    25%,
+    75% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(7);
+              transform: scale(7);
+    }
+  }
   .navbar__container {
     height: 100vh;
   }
@@ -62,38 +92,9 @@
   }
 }
 
-@media screen and (max-width: 425px) {
-  .nav__list {
-    row-gap: 1.7rem;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .nav__list {
-    row-gap: 1.4rem;
-  }
-}
-
 @media screen and (max-width: 320px) {
   .nav__list {
     row-gap: 1.3rem;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .hours {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .hours .day {
-    padding: 2rem;
-  }
-  .hours .stick {
-    height: 1px;
-    width: 160px;
-    background-color: black;
   }
 }
 
@@ -108,11 +109,71 @@
   }
 }
 
-.ri-arrow-down-s-line {
-  color: #902600;
-}
-
 @media screen and (max-width: 1024px) {
+  @-webkit-keyframes fadeIn {
+    0% {
+      -webkit-transform: translateX(-200%);
+              transform: translateX(-200%);
+    }
+    90% {
+      -webkit-transform: translateX(35%);
+              transform: translateX(35%);
+      opacity: 0.5;
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      -webkit-transform: translateX(-200%);
+              transform: translateX(-200%);
+    }
+    90% {
+      -webkit-transform: translateX(35%);
+              transform: translateX(35%);
+      opacity: 0.5;
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fadeIn2 {
+    0% {
+      -webkit-transform: translateX(200%);
+              transform: translateX(200%);
+    }
+    90% {
+      -webkit-transform: translateX(-35%);
+              transform: translateX(-35%);
+      opacity: 0.5;
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn2 {
+    0% {
+      -webkit-transform: translateX(200%);
+              transform: translateX(200%);
+    }
+    90% {
+      -webkit-transform: translateX(-35%);
+              transform: translateX(-35%);
+      opacity: 0.5;
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      opacity: 1;
+    }
+  }
   .operation__tab-container > button {
     margin-right: 2rem;
   }
@@ -145,6 +206,53 @@
 }
 
 @media screen and (max-width: 425px) {
+  @-webkit-keyframes cloud {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    25%,
+    75% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(30);
+              transform: scale(30);
+    }
+  }
+  @keyframes cloud {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    25%,
+    75% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(30);
+              transform: scale(30);
+    }
+  }
+  .nav__list {
+    row-gap: 1.7rem;
+  }
+  .hours {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hours .day {
+    padding: 2rem;
+  }
+  .hours .stick {
+    height: 1px;
+    width: 160px;
+    background-color: black;
+  }
   .operation__field .operation__meal {
     max-width: 250px;
     height: auto;
@@ -186,6 +294,9 @@
 }
 
 @media screen and (max-width: 375px) {
+  .nav__list {
+    row-gap: 1.4rem;
+  }
   .section__img img {
     max-width: 300px;
   }
