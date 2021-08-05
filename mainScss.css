@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Montserrat:wght@400;500;600;700&display=swap");
-@use 'nullstyle';
-@use 'media';
-@use 'animation';
+@use 'nullstyle.scss';
+@use 'media.scss';
+@use 'animation.scss';
 .header, .navbar__container .nav__list, .iframe__container {
   display: -webkit-box;
   display: -ms-flexbox;
