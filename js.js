@@ -142,8 +142,15 @@ const headerCoords = header.getBoundingClientRect()
 const stickyNav = function (entries) {
   const [entry] = entries
 
-  if (!entry.isIntersecting) navbarContainer.classList.add('nav__sticky')
-  else navbarContainer.classList.remove('nav__sticky')
+  if (!entry.isIntersecting && window.innerWidth < 950) {
+    return
+  } else {
+    if (!entry.isIntersecting && window.innerWidth > 950) {
+      navbarContainer.classList.add('nav__sticky')
+    } else {
+      navbarContainer.classList.remove('nav__sticky')
+    }
+  }
 }
 
 const navStickyPlace = new IntersectionObserver(stickyNav, {

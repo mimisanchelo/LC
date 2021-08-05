@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Montserrat:wght@400;500;600;700&display=swap');
 
-@import 'style/animation.scss';
+@import 'style/anibreakpoints.scss';
 @import 'style/nullstyle.scss';
 
 //
@@ -699,7 +699,8 @@ body {
 .ri-arrow-down-s-line {
   color: rgba(144, 38, 0, 1);
 }
-// NAVBAR MENU MEDIA
+// /////////////////////////////////NAVBAR MENU MEDIA
+////////////////////////////////////// THE REST
 
 @media screen and (max-width: 950px) {
   @keyframes cloud {
@@ -766,14 +767,12 @@ body {
     }
   }
 }
-
 @media screen and (max-width: 320px) {
   .nav__list {
     row-gap: 1.3rem;
   }
 }
 
-// THE REST
 @media screen and (max-width: 1300px) {
   .operation__field {
     justify-content: center;
@@ -862,7 +861,7 @@ body {
   .nav__list {
     row-gap: 1.7rem;
   }
-  // FIELD FOR MEALS
+
   .hours {
     flex-direction: column;
     .day {
@@ -874,6 +873,8 @@ body {
       background-color: black;
     }
   }
+}
+@media screen and (max-width: 500px) {
   .operation__field {
     .operation__meal {
       max-width: 250px;
