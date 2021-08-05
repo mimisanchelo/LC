@@ -209,9 +209,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .operation__tab-container > button {
-    margin-right: 2rem;
-  }
   @-webkit-keyframes fadeIn {
     0% {
       -webkit-transform: translateX(-200%);
