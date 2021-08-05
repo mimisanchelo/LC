@@ -96,16 +96,14 @@ promoClose.addEventListener('click', function () {
   promotionOverlay.classList.add('hidden')
 })
 
-setTimeout(function () {
-  promotionContainer.classList.remove('hidden')
-  promotionOverlay.classList.remove('hidden')
-}, 6000)
+// setTimeout(function () {
+//   promotionContainer.classList.remove('hidden')
+//   promotionOverlay.classList.remove('hidden')
+// }, 6000)
 
 ///////////////////////////////////////// SMOOTH SCROLLING
 
-const navList = document.querySelector('.nav__list')
-
-navList.addEventListener('click', function (e) {
+navlist.addEventListener('click', function (e) {
   e.preventDefault()
 
   if (e.target.classList.contains('nav__link')) {
@@ -135,3 +133,23 @@ allSections.forEach(function (section) {
   observerSection.observe(section)
   section.classList.add('section--hidden')
 })
+
+///////////////////////////////////////////////// STICKY NAV
+
+const header = document.querySelector('.header')
+const headerCoords = header.getBoundingClientRect()
+
+const stickyNav = function (entries) {
+  const [entry] = entries
+
+  if (!entry.isIntersecting) navbarContainer.classList.add('nav__sticky')
+  else navbarContainer.classList.remove('nav__sticky')
+}
+
+const navStickyPlace = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: '-74px',
+})
+
+navStickyPlace.observe(header)
