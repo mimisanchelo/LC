@@ -45,19 +45,19 @@
               ><img src="material/resize/logolong300.png" alt=""
             /></a>
           </li>
-          <li class="nav__items">
-            <a href="#reservation" class="nav__link nav__link--active"
+          <li class="nav__items ">
+            <a href="#reservations" class="reservations nav__link"
               >Reservation</a
             >
           </li>
           <li class="nav__items">
-            <a href="#hours" class="nav__link">Hours</a>
+            <a href="#hourss" class="nav__link hourss">Hours</a>
           </li>
           <li class="nav__items">
-            <a href="#menu" class="nav__link">Menu</a>
+            <a href="#menus" class="nav__link menus">Menu</a>
           </li>
           <li class="nav__items">
-            <a href="#about" class="nav__link">About</a>
+            <a href="#abouts" class="nav__link abouts">About</a>
           </li>
           <li class="nav__items">
             <a href="#" class="nav__link">Gallery</a>
@@ -69,7 +69,7 @@
             <a href="#" class="nav__link">Events</a>
           </li>
           <li class="nav__items">
-            <a href="#" class="nav__link">Subscribe</a>
+            <a href="#subscribes" class="nav__link">Subscribe</a>
           </li>
           <i class="ri-close-fill nav--close"></i>
 
@@ -90,7 +90,7 @@
 
     <!-- RESERVATION -->
     
-    <div class="reservation section" id="reservation">
+    <div class="reservation section" id="reservations">
       <div class="reservation__container">
         <h1 class="section__title">Reservation</h1>
         <div class="reservation__info--container">
@@ -125,7 +125,7 @@
 
     <!-- KITCHEN HOURS -->
 
-    <div class="section kitchen__hours--container" id="hours">
+    <div class="section kitchen__hours--container" id="hourss">
       <h1 class="section__title">Kitchen & Bar Hours</h1>
       <div class="hours">
         <div class="day">
@@ -181,24 +181,24 @@
 
     <!-- TAB MENU -->
 
-    <section class="section" id="menu">
+    <section class="section menu" id="menus">
       <div class="section__header">
         <h1 class="section__title">Menu</h1>
         <div class="section__img">
           <img src="material/resize/logolong350.png" alt="" />
         </div>
-        <a href="menu.pdf" download="#"><button class="btn__download">Download PDF Menu</button></a>
+        <a href="menu.pdf" download="#"><button class="btn__download btn">Download PDF Menu</button></a>
       </div>
 
       <div class="operation">
         <div class="operation__tab-container">
-          <button class="btn operation__tab operation__tab--1 operation__tab--active" data-tab='1'>Sides/Salads</button>
-          <button class="btn operation__tab operation__tab--2" data-tab='2'>Tacos</button>
-          <button class="btn operation__tab operation__tab--3" data-tab='3'>Handhelds</button>
-          <button class="btn operation__tab operation__tab--4" data-tab='4'>Kids</button>
-          <button class="btn operation__tab operation__tab--5" data-tab='5'>Combo</button>
-          <button class="btn operation__tab operation__tab--6" data-tab='6'>Brunch</button>
-          <button class="btn operation__tab operation__tab--7" data-tab='7'>Alcohol</button>
+          <button class="operation__tab operation__tab--1 operation__tab--active" data-tab='1'>Sides/Salads</button>
+          <button class="operation__tab operation__tab--2" data-tab='2'>Tacos</button>
+          <button class="operation__tab operation__tab--3" data-tab='3'>Handhelds</button>
+          <button class="operation__tab operation__tab--4" data-tab='4'>Kids</button>
+          <button class="operation__tab operation__tab--5" data-tab='5'>Combo</button>
+          <button class="operation__tab operation__tab--6" data-tab='6'>Brunch</button>
+          <button class="operation__tab operation__tab--7" data-tab='7'>Alcohol</button>
          
         </div>
 
@@ -206,6 +206,7 @@
         <div
           class="operation__field operation__field--1 operation__field--active"
         >
+        
           <div class="operation__meal">
             <img src="material/resize/poppers.jpg" alt="" />
             <div class="operation__description">
@@ -216,6 +217,7 @@
               <div class="operation__price">14 $</div>
             </div>
           </div>
+       
           <div class="operation__meal">
             <img src="material/resize/nachos.jpg" alt="" />
             <div class="operation__description">
@@ -693,7 +695,7 @@
 
     <!-- ABOUT -->
 
-    <section class="section" id="about">
+    <section class="section about" id="abouts">
       <div class="section__about">
         <h1 class="section__title">About Us</h1>
         <div class="section__img">
@@ -800,6 +802,22 @@
           </div>    
       </div>
     </section>
+    
+    <!-- SUBSCRIBE -->
+
+    <section class="subscribe section" id="subscribe">
+      <div class="subscribe__container">
+          <div class="subscribe__left">
+            <img src="material/resize/sublogo.png" alt="">
+          </div>
+          <div class="subscribe__right">
+            <h2 class="subscribe__header">Do you <span class="subscribe__highlight"> want to know</span> more about upcoming <br>Features, Events, Promotions?</h2>
+            <a class="subscribe__btn" href="#">Subscribe</a>
+            
+          </div>
+      </div>
+
+    </section>
 
     <!-- FOOTER -->
 
@@ -821,13 +839,13 @@
           <h3 class="footer__contact--black">Info</h3>
           <ul class="footer__list"> 
             <li class="footer__items">
-              <a href="#" class="footer__link">About</a>
+              <a href="#abouts" class="footer__link">About</a>
             </li>
             <li class="footer__items">
-              <a href="#" class="footer__link">Hours</a>
+              <a href="#hourss" class="footer__link">Hours</a>
             </li>
             <li class="footer__items">
-              <a href="#" class="footer__link">Menu</a>
+              <a href="#menus" class="footer__link">Menu</a>
             </li>
             <li class="footer__items">
               <a href="#" class="footer__link">Gallery</a>
@@ -839,7 +857,7 @@
           <ul class="footer__list">
 
             <li class="footer__items">
-              <a href="#" class="footer__link">Reservation</a>
+              <a href="#reservations" class="footer__link">Reservation</a>
             </li>
             <li class="footer__items">
               <a href="#" class="footer__link">Events</a>
@@ -848,7 +866,7 @@
               <a href="#" class="footer__link">Delivery</a>
             </li>
             <li class="footer__items">
-              <a href="#" class="footer__link">Subscribe</a>
+              <a href="#subscribe" class="footer__link">Subscribe</a>
             </li>
           </ul>
         </div>
@@ -879,7 +897,7 @@
           <img src="material/resize/logolong300.png" alt="">
           <p class="promo__content">Be the first to receive exclusive promotions & discounts.<br> As well as the inside scoop on new beer releases!</p>
           
-          <a href="#" class="promo__link">Subscribe</a>
+          <a href="#subscribe" class="promo__btn subscribe__btn--link">Subscribe</a>
           <i class="ri-close-fill promo--close"></i>
         </div>
       </div>

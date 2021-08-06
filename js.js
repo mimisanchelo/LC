@@ -7,6 +7,7 @@ const btnNavListOpen = document.querySelector('.nav__toggle')
 const btnNavListClose = document.querySelector('.nav--close')
 const navbarContainer = document.querySelector('.navbar__container')
 const navItems = document.querySelectorAll('.nav__items')
+const navLinks = document.querySelectorAll('.nav__link')
 
 // tabmenu
 
@@ -91,17 +92,26 @@ setTimeout(() => {
 const promoClose = document.querySelector('.promo--close')
 const promotionContainer = document.querySelector('.promotion')
 const promotionOverlay = document.querySelector('.promotion__overlay')
+const subscribeLink = document.querySelector('.subscribe__btn--link')
+// CLOSE BTN
 promoClose.addEventListener('click', function () {
   promotionContainer.remove()
   promotionOverlay.classList.add('hidden')
 })
-
-// setTimeout(function () {
-//   promotionContainer.classList.remove('hidden')
-//   promotionOverlay.classList.remove('hidden')
-// }, 6000)
+// SUB BTN
+subscribeLink.addEventListener('click', function () {
+  promotionContainer.remove()
+  promotionOverlay.classList.add('hidden')
+})
+// MAKE IT VISIBLE
+setTimeout(function () {
+  promotionContainer.classList.remove('hidden')
+  promotionOverlay.classList.remove('hidden')
+}, 6000)
 
 ///////////////////////////////////////// SMOOTH SCROLLING
+const allSections = document.querySelectorAll('.section')
+const footerLists = document.querySelectorAll('.footer__list')
 
 navlist.addEventListener('click', function (e) {
   e.preventDefault()
@@ -111,10 +121,39 @@ navlist.addEventListener('click', function (e) {
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' })
   }
 })
+footerLists.forEach(function (list) {
+  list.addEventListener('click', function (e) {
+    e.preventDefault()
 
+    if (e.target.classList.contains('footer__link')) {
+      const id = e.target.getAttribute('href')
+      document.querySelector(id).scrollIntoView({ behavior: 'smooth' })
+    }
+  })
+})
+
+// ///////////////////////////////////////NAV STYLE ON SCROLL
+
+window.addEventListener('scroll', () => {
+  let current = ''
+
+  allSections.forEach(function (section) {
+    const sectionTop = section.offsetTop // PX OF EACH SECTION
+    const sectionHeight = section.clientHeight
+
+    if (pageYOffset >= sectionTop - sectionHeight / 5) {
+      current = section.getAttribute('id')
+    }
+  })
+
+  navLinks.forEach(function (link) {
+    link.classList.remove('nav__link--active')
+    if (link.classList.contains(current)) {
+      link.classList.add('nav__link--active')
+    }
+  })
+})
 ////////////////////////////////////////////// REVEAL SECTION
-
-const allSections = document.querySelectorAll('.section')
 
 const revealSection = function (entries, observer) {
   const [entry] = entries
@@ -131,6 +170,7 @@ const observerSection = new IntersectionObserver(revealSection, {
 
 allSections.forEach(function (section) {
   observerSection.observe(section)
+
   section.classList.add('section--hidden')
 })
 
