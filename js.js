@@ -6,7 +6,6 @@ const navlist = document.querySelector('.nav__list')
 const btnNavListOpen = document.querySelector('.nav__toggle')
 const btnNavListClose = document.querySelector('.nav--close')
 const navbarContainer = document.querySelector('.navbar__container')
-const navItems = document.querySelectorAll('.nav__items')
 const navLinks = document.querySelectorAll('.nav__link')
 
 // tabmenu
@@ -14,6 +13,10 @@ const navLinks = document.querySelectorAll('.nav__link')
 const tabsContainer = document.querySelector('.operation__tab-container')
 const tabs = document.querySelectorAll('.operation__tab')
 const tabsContent = document.querySelectorAll('.operation__field')
+
+// rest
+
+const allSections = document.querySelectorAll('.section')
 
 /////////////////////////// PRELOAD
 
@@ -36,9 +39,8 @@ const closeNav = function () {
 btnNavListOpen.addEventListener('click', openNav)
 btnNavListClose.addEventListener('click', closeNav)
 
-navItems.forEach(function (item) {
-  item.addEventListener('click', function (e) {
-    e.preventDefault()
+navLinks.forEach(function (link) {
+  link.addEventListener('click', function () {
     closeNav()
   })
 })
@@ -48,7 +50,6 @@ navItems.forEach(function (item) {
 tabsContainer.addEventListener('click', function (e) {
   const clicked = e.target.closest('.operation__tab')
 
-  console.log(clicked)
   // GUARD CLAUSE
   if (!clicked) return
   // remove active
@@ -104,33 +105,10 @@ subscribeLink.addEventListener('click', function () {
   promotionOverlay.classList.add('hidden')
 })
 // MAKE IT VISIBLE
-setTimeout(function () {
-  promotionContainer.classList.remove('hidden')
-  promotionOverlay.classList.remove('hidden')
-}, 6000)
-
-///////////////////////////////////////// SMOOTH SCROLLING
-const allSections = document.querySelectorAll('.section')
-const footerLists = document.querySelectorAll('.footer__list')
-
-navlist.addEventListener('click', function (e) {
-  e.preventDefault()
-
-  if (e.target.classList.contains('nav__link')) {
-    const id = e.target.getAttribute('href')
-    document.querySelector(id).scrollIntoView({ behavior: 'smooth' })
-  }
-})
-footerLists.forEach(function (list) {
-  list.addEventListener('click', function (e) {
-    e.preventDefault()
-
-    if (e.target.classList.contains('footer__link')) {
-      const id = e.target.getAttribute('href')
-      document.querySelector(id).scrollIntoView({ behavior: 'smooth' })
-    }
-  })
-})
+// setTimeout(function () {
+//   promotionContainer.classList.remove('hidden')
+//   promotionOverlay.classList.remove('hidden')
+// }, 6000)
 
 // ///////////////////////////////////////NAV STYLE ON SCROLL
 
@@ -155,24 +133,24 @@ window.addEventListener('scroll', () => {
 })
 ////////////////////////////////////////////// REVEAL SECTION
 
-const revealSection = function (entries, observer) {
-  const [entry] = entries
-  if (!entry.isIntersecting) return
+// const revealSection = function (entries, observer) {
+//   const [entry] = entries
+//   if (!entry.isIntersecting) return
 
-  entry.target.classList.remove('section--hidden')
-  observer.unobserve(entry.target)
-}
+//   entry.target.classList.remove('section--hidden')
+//   observer.unobserve(entry.target)
+// }
 
-const observerSection = new IntersectionObserver(revealSection, {
-  root: null,
-  threshold: 0.1,
-})
+// const observerSection = new IntersectionObserver(revealSection, {
+//   root: null,
+//   threshold: 0.1,
+// })
 
-allSections.forEach(function (section) {
-  observerSection.observe(section)
+// allSections.forEach(function (section) {
+//   observerSection.observe(section)
 
-  section.classList.add('section--hidden')
-})
+//   section.classList.add('section--hidden')
+// })
 
 ///////////////////////////////////////////////// STICKY NAV
 

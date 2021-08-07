@@ -25,9 +25,17 @@
 }
 
 // HEADER
+// .transition-fade {
+//   opacity: 1;
+//   transition: 0.5s;
+//   transform: translateX(0);
+//   transform-origin: left;
+// }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   overflow-x: hidden;
 }
@@ -250,6 +258,22 @@ body {
     display: none;
     cursor: pointer;
   }
+  .nav__list--links {
+    @extend %flexCenter;
+    flex: 1;
+    .nav__socials > a {
+      color: black;
+      font-size: 1.5rem;
+      margin-right: 1.5rem;
+      cursor: pointer;
+      &:hover {
+        color: hsl(352, 77, 30);
+      }
+      &:last-of-type {
+        margin-right: 0px;
+      }
+    }
+  }
 }
 .nav__overlay {
   z-index: 9;
@@ -269,7 +293,7 @@ body {
   transform: translateY(8rem);
 }
 
-.reservation {
+.reservation__block {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -385,7 +409,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   padding: 30px;
-  transition: border 0.4s;
+  transition: 0.8s;
   & > button {
     display: inline-block;
     color: rgb(112, 112, 112);
@@ -408,7 +432,7 @@ body {
   }
   .operation__tab--active {
     transform: translateY(-66%);
-    transition: 0.5s;
+    transition: 0.4s;
     font-weight: 600;
     color: black;
     border-bottom: 1px solid hsl(352, 77, 38);
@@ -432,13 +456,13 @@ body {
   margin: 1rem auto 6rem;
   .operation__meal {
     &:nth-of-type(odd) {
-      animation: fadeIn 1s;
+      animation: fadeIn 0.8s;
       animation-fill-mode: forwards;
 
       transform: translateX(-200%);
     }
     &:nth-of-type(even) {
-      animation: fadeIn2 1s;
+      animation: fadeIn2 0.8s;
       animation-fill-mode: forwards;
 
       transform: translateX(200%);
@@ -600,6 +624,9 @@ body {
   justify-items: center;
   align-items: center;
   .section__img {
+    .footer__logo--home {
+      cursor: pointer;
+    }
     img {
       width: 350px;
     }
@@ -836,7 +863,7 @@ body {
     display: none;
   }
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 990px) {
   @keyframes cloud {
     0% {
       opacity: 0;
@@ -876,7 +903,7 @@ body {
     transition: 0.4s;
     transform: translateX(100%);
     .logohome {
-      display: inline-block;
+      display: block;
       img {
         width: 100%;
         margin: auto;

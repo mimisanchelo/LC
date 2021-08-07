@@ -190,7 +190,7 @@ button {
   cursor: pointer;
 }
 
-.header, .navbar__container .nav__list, .iframe__container {
+.header, .navbar__container .nav__list, .navbar__container .nav__list--links, .iframe__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,6 +494,27 @@ body {
   cursor: pointer;
 }
 
+.navbar__container .nav__list--links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.navbar__container .nav__list--links .nav__socials > a {
+  color: black;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.navbar__container .nav__list--links .nav__socials > a:hover {
+  color: #871221;
+}
+
+.navbar__container .nav__list--links .nav__socials > a:last-of-type {
+  margin-right: 0px;
+}
+
 .nav__overlay {
   z-index: 9;
   position: fixed;
@@ -514,7 +535,7 @@ body {
           transform: translateY(8rem);
 }
 
-.reservation {
+.reservation__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -669,8 +690,8 @@ body {
   font-weight: 500;
   font-size: 20px;
   padding: 30px;
-  -webkit-transition: border 0.4s;
-  transition: border 0.4s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .operation__tab-container > button {
@@ -701,8 +722,8 @@ body {
 .operation__tab-container .operation__tab--active {
   -webkit-transform: translateY(-66%);
           transform: translateY(-66%);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   font-weight: 600;
   color: black;
   border-bottom: 1px solid #ac162a;
@@ -728,8 +749,8 @@ body {
 }
 
 .operation__field .operation__meal:nth-of-type(odd) {
-  -webkit-animation: fadeIn 1s;
-          animation: fadeIn 1s;
+  -webkit-animation: fadeIn 0.8s;
+          animation: fadeIn 0.8s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-transform: translateX(-200%);
@@ -737,8 +758,8 @@ body {
 }
 
 .operation__field .operation__meal:nth-of-type(even) {
-  -webkit-animation: fadeIn2 1s;
-          animation: fadeIn2 1s;
+  -webkit-animation: fadeIn2 0.8s;
+          animation: fadeIn2 0.8s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-transform: translateX(200%);
@@ -951,6 +972,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer .section__img .footer__logo--home {
+  cursor: pointer;
 }
 
 .footer .section__img img {
@@ -1260,7 +1285,7 @@ body {
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 990px) {
   @-webkit-keyframes cloud {
     0% {
       opacity: 0;
@@ -1323,7 +1348,7 @@ body {
             transform: translateX(100%);
   }
   .nav__list .logohome {
-    display: inline-block;
+    display: block;
   }
   .nav__list .logohome img {
     width: 100%;
