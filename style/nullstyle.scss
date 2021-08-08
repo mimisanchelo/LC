@@ -10,10 +10,13 @@ a:active,
 input {
   outline: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   min-height: 100vh;
   width: 100%;
-  scroll-behavior: smooth;
+  font-family: 'Lora', serif;
 }
 
 ul,
@@ -33,7 +36,7 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+  font-family: 'Montserrat', sans-serif;
 }
 
 button {

@@ -1,0 +1,74 @@
+@import 'styles.scss';
+
+.footer {
+  background: $secondColorLight;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  .section__img {
+    .footer__logo--home {
+      cursor: pointer;
+    }
+    img {
+      width: 350px;
+    }
+  }
+}
+.footer-wrap {
+  display: flex;
+  width: 80%;
+  margin: 3rem auto 1rem;
+  flex-wrap: wrap;
+  .footer__info,
+  .footer__socials {
+    flex-basis: 25%;
+    padding: 20px;
+  }
+}
+.footer__items {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  &:first-child {
+    margin-top: 1rem;
+  }
+  .footer__link {
+    color: rgb(27, 27, 27);
+    font-size: 18px;
+    position: relative;
+    &::after {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background: $hoverColor;
+      position: absolute;
+      margin: -3px 0;
+      left: 0;
+      transform: scaleX(0);
+      transition: transform 0.5s;
+    }
+    &::after {
+      bottom: 0;
+      transform-origin: left;
+    }
+    &:hover::after {
+      transform: scaleX(1);
+    }
+  }
+}
+.footer__social--icons > a {
+  color: black;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  &:hover {
+    color: $hoverColor;
+  }
+  &:last-of-type {
+    margin-right: 0px;
+  }
+}
+.footer__contact--black {
+  font-size: 20px;
+  padding-bottom: 1rem;
+}

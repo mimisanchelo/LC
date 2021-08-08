@@ -1,0 +1,14 @@
+// //////////////////////////////////////// SAMPLE
+%flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+//////////// VARIABLES / colors
+
+$mainColor: hsl(352, 77, 35);
+$secondColorLight: rgb(220, 220, 220);
+$secondColorDark: rgb(200, 200, 200);
+$secondColorDarker: rgb(150, 150, 150);
+$activeColor: hsl(352, 77, 40);
+$hoverColor: hsl(352, 77, 30);

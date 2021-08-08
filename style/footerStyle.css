@@ -1,0 +1,102 @@
+.footer {
+  background: gainsboro;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .section__img .footer__logo--home {
+  cursor: pointer;
+}
+
+.footer .section__img img {
+  width: 350px;
+}
+
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 3rem auto 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer-wrap .footer__info,
+.footer-wrap .footer__socials {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  padding: 20px;
+}
+
+.footer__items {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.footer__items:first-child {
+  margin-top: 1rem;
+}
+
+.footer__items .footer__link {
+  color: #1b1b1b;
+  font-size: 18px;
+  position: relative;
+}
+
+.footer__items .footer__link::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #871221;
+  position: absolute;
+  margin: -3px 0;
+  left: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.footer__items .footer__link::after {
+  bottom: 0;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.footer__items .footer__link:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.footer__social--icons > a {
+  color: black;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.footer__social--icons > a:hover {
+  color: #871221;
+}
+
+.footer__social--icons > a:last-of-type {
+  margin-right: 0px;
+}
+
+.footer__contact--black {
+  font-size: 20px;
+  padding-bottom: 1rem;
+}
+/*# sourceMappingURL=footerStyle.css.map */
