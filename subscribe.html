@@ -11,13 +11,15 @@
     />
     <link rel="stylesheet" href="mainScss.css" />
     <link rel="stylesheet" href="secondStyle.css" />
+
     <link rel="shortcut icon" href="material/favicons.png" />
+
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-    <script defer src="js.js"></script>
+    <!-- <script defer src="js.js"></script> -->
+    <script defer src="scriptSecondary.js"></script>
   </head>
   <body>
     <header class="header__subscribe">
-        <div class="nav__container-outside">
             <nav class="navbar__container--sub" id="navbar-container">
               <div class="nav__items">
                 <a class="logohome--sub" href="#"
@@ -25,6 +27,9 @@
                 /></a>
               </div>
                 <ul class="nav__list">
+                  <li class="nav__items"><a class="logohome--nav" href="/index.html"
+                  ><img src="material/resize/logolong300.png" alt=""
+                /></a></li>
                   <li class="nav__items ">
                     <a href="/index.html" class="home nav__link"
                       >Home</a
@@ -72,7 +77,6 @@
                     <i class="ri-dashboard-fill"></i>
                 </div>
             </nav>
-        </div>
   </header>
       <main class="section subscribe">
         <div class="subscribe__container">
@@ -85,15 +89,15 @@
             <p class="sub__content">As well as the inside scoop on new beer releases!</p>
             <form  action="results.html">
                 <div>
-                    
+                    <label for="name"></label>
                     <input name="name" type="text" id="name" placeholder=" First Name" required>
                 </div>
                 <div>
-                  
+                  <label for="surname"></label>
                     <input name="surname" type="text" id="surname" placeholder=" Last Name" required>
                 </div>
                 <div>
-                   
+                  <label for="email"></label>
                     <input name="email" type="email" id="email" placeholder=" Email" required>
                 </div>
                 <button type="submit">Submit</button>

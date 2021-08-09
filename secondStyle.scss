@@ -1,18 +1,21 @@
 @import 'style/styles.scss';
 @import 'mainScss.scss';
+@import 'style/nullstyle.scss';
 
-.nav__container-outside {
-  position: absolute;
-  background-color: hsla(0, 0%, 75%, 0.8);
-  height: 8vh;
-  width: 100%;
+body {
+  overflow-x: hidden;
+}
+.header__subscribe {
+  background: hsla(0, 0%, 75%, 0.8);
+  position: relative;
 }
 .navbar__container--sub {
   font-size: 18px;
   font-weight: 600;
-  margin: 1rem auto;
+  margin: auto;
   width: 90%;
   display: flex;
+  height: 70px;
   align-items: center;
   justify-content: space-around;
   .nav__list {
@@ -33,6 +36,9 @@
   }
   .nav__items {
     padding-right: 1.8rem;
+  }
+  .logohome--nav {
+    display: none;
   }
 
   .nav__link {
@@ -70,12 +76,8 @@
     visibility: hidden;
   }
   .nav__toggle {
-    z-index: 3;
-    position: fixed;
-    top: 1.5rem;
-    right: 1.5rem;
-    font-size: 1.5rem;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     cursor: pointer;
   }
   .nav__list--links {
@@ -178,7 +180,7 @@
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1310px) {
   .navbar__container--sub {
     width: 100%;
     .logohome--sub {
@@ -187,6 +189,62 @@
   }
 }
 @media screen and (max-width: 1024px) {
+  .navbar__container--sub {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    scroll-behavior: no;
+    .logohome--nav {
+      display: block;
+    }
+    .nav__toggle {
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+      z-index: 3;
+      visibility: visible;
+      opacity: 1;
+      font-size: 2rem;
+    }
+    .nav--open {
+      &.nav__list {
+        transform: translateX(0%);
+        box-shadow: rgba(0, 0, 0, 0.35) -5px 0px 10px;
+      }
+    }
+  }
+  .nav__list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 80%;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    z-index: 10;
+    background: rgb(235, 219, 219);
+    opacity: 1;
+    transition: 0.4s;
+    transform: translateX(100%);
+    .ri-close-fill {
+      visibility: visible;
+      position: absolute;
+      bottom: 1.6rem;
+      right: 1.5rem;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+    .nav__socials {
+      visibility: visible;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav__items {
+      padding-right: 0;
+    }
+  }
   .subscribe__container {
     margin: 0rem 0 1rem;
     width: 70%;
@@ -211,12 +269,6 @@
         margin-bottom: 0.5rem;
         text-align: center;
       }
-      form {
-        margin: 1rem;
-        button {
-          margin: 0.5rem auto 0;
-        }
-      }
     }
   }
 }
@@ -233,6 +285,9 @@
   }
 }
 @media screen and (max-width: 630px) {
+  .nav__list {
+    row-gap: 1.7rem;
+  }
   .subscribe__container {
     margin: 0rem 0 1rem;
     width: 80%;
@@ -255,28 +310,21 @@
   }
 }
 @media screen and (max-width: 400px) {
+  .logohome--nav {
+    padding: 0 1rem;
+  }
   .subscribe__container {
-    margin: 0rem 0 1rem;
-    width: 90%;
-    height: 90vh;
     .subscribe__left {
       img {
         width: 150px;
       }
     }
     .subscribe__right {
-      flex-basis: 70%;
-      padding: 0rem 1rem;
-      .sub__header {
-        font-size: 18px;
-      }
       .sub__content {
-        margin-bottom: 1rem;
         font-size: 14px;
       }
       form {
         width: 100%;
-        margin: 0rem 0 1rem;
       }
     }
   }
