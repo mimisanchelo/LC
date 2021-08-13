@@ -1,0 +1,234 @@
+@import 'styles.scss';
+@import '../mainStyle.scss';
+@import 'eventSubStyle.scss';
+@import 'nullstyle.scss';
+
+.delivery {
+  background-image: url(https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1621361506488-4SUQZSLFUHWJY0Q64GQN/brewery+2.jpg?format=1500w);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+.delivery__note {
+  text-align: center;
+  background: rgba(rgb(30, 30, 30), 0.7);
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0rem auto;
+  color: $secondColorLight;
+  font-size: 18px;
+  .delivery__style {
+    font-style: italic;
+  }
+  & > p {
+    padding-top: 1rem;
+  }
+}
+.delivery__section {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  background: rgba($secondColorDark, 0.9);
+  border-radius: 10px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  height: 100%;
+  gap: 2rem;
+  padding: 2rem;
+  margin: 1rem auto 6rem;
+  .delivery__choice {
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    max-width: 350px;
+    height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    &:active {
+      transform: scale(0.99);
+    }
+    img {
+      object-fit: cover;
+      border-radius: 10px;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .delivery__info {
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background: rgba($secondColorLight, 0.7);
+      padding: 10px;
+      position: absolute;
+      max-width: 250px;
+      bottom: 0px;
+      color: $activeColor;
+    }
+  }
+}
+
+// MODAL
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__content {
+  background: $secondColorLight;
+  width: 45%;
+  max-height: 70%;
+  padding: 1.5rem;
+  display: flex;
+  position: relative;
+  gap: 2rem;
+  border-radius: 10px;
+  animation: show 0.4s ease-out;
+}
+.modal__left,
+.modal__right {
+  flex-basis: 50%;
+}
+.modal__left {
+  img {
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+}
+.modal__right {
+  margin-top: 3rem;
+  max-width: 350px;
+  .modal__name {
+    color: $activeColor;
+    padding-bottom: 2rem;
+  }
+  .modal__description {
+    line-height: 1.4;
+    padding-bottom: 2rem;
+  }
+  i {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+  .modal__price {
+    color: $mainColor;
+    font-weight: 600;
+    padding-bottom: 2rem;
+  }
+  .modal__quantity {
+    display: block;
+    padding-bottom: 0.5rem;
+  }
+  .modal__input {
+    width: 75px;
+    height: 30px;
+  }
+  .modal__add {
+    display: block;
+    margin-top: 2rem;
+    padding: 10px 24px;
+    cursor: pointer;
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+// MEDIA
+@media screen and (max-width: 1300px) {
+  .modal__content {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .modal__content {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delivery__note {
+    margin: 0 1rem;
+  }
+  .delivery__section {
+    margin: 2rem 1rem;
+    .delivery__choice {
+      max-width: 300px;
+    }
+  }
+  .modal__content {
+    gap: 1rem;
+    max-height: 90%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .modal__left,
+  .modal__right {
+    flex-basis: 100%;
+  }
+  .modal__left {
+    img {
+      height: 400px;
+    }
+  }
+  .modal__right {
+    margin-top: 0rem;
+    max-width: 500px;
+    .modal__name {
+      padding-bottom: 1rem;
+    }
+    .modal__description {
+      line-height: 1.3;
+      padding-bottom: 1rem;
+    }
+    .modal__price {
+      padding-bottom: 1rem;
+    }
+    .modal__quantity {
+      padding-bottom: 0.5rem;
+    }
+    .modal__add {
+      margin: 1rem auto 0rem;
+    }
+    i {
+      font-size: 1.7rem;
+      top: 0.4rem;
+      right: 0.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .delivery__section {
+    padding: 1rem;
+  }
+}

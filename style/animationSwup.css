@@ -1,0 +1,28 @@
+.transition-slideDown {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+html.is-animating .transition-slideDown {
+  opacity: 0;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+.transition-fadeIn {
+  opacity: 1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+html.is-animating .transition-fadeIn {
+  opacity: 0;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=animationSwup.css.map */

@@ -1,0 +1,18 @@
+.transition-slideDown {
+  transition: 0.4s;
+  opacity: 1;
+  transform: translateY(0px);
+}
+html.is-animating .transition-slideDown {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+.transition-fadeIn {
+  opacity: 1;
+  transition: 0.4s;
+  transform: scale(1);
+}
+html.is-animating .transition-fadeIn {
+  opacity: 0;
+  transform: scale(1.2);
+}
