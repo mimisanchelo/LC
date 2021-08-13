@@ -173,13 +173,15 @@
   .modal__content {
     width: 80%;
   }
+  .delivery__section {
+    margin: 2rem 1rem;
+  }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .delivery__note {
     margin: 0 1rem;
   }
   .delivery__section {
-    margin: 2rem 1rem;
     .delivery__choice {
       max-width: 300px;
     }

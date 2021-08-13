@@ -2,16 +2,30 @@
 @import 'nullstyle.scss';
 
 // NAVBAR ELEMENTs
-
+body {
+  overflow-x: hidden;
+}
 .navbar__container--sub {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 18px;
   min-height: 8vh;
   width: 100%;
   background: rgba(200, 200, 200, 0.7);
   position: absolute;
   top: 0;
+  &.nav__overlay--sub {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    transition: 0.4s;
+  }
 }
 //  UL
 .nav__list--sub {
@@ -30,6 +44,7 @@
   // ACTIVE STATE
   &.show__nav--sub {
     transform: translateX(0%);
+    box-shadow: rgba(0, 0, 0, 0.35) -5px 0px 10px;
   }
   .nav__link--sub {
     margin-right: 1.5rem;
@@ -114,10 +129,8 @@
 
 @media screen and (max-width: 950px) {
   .navbar__container--sub {
+    height: 100vh;
     background: transparent;
-  }
-  body {
-    overflow-x: hidden;
   }
   .nav__list--sub {
     .logohome--nav {
@@ -130,7 +143,7 @@
   }
   .nav__list--sub {
     z-index: 20;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     height: 100vh;

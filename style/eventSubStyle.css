@@ -677,6 +677,32 @@ body {
   transition: 0.4s;
 }
 
+@-webkit-keyframes linkFadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes linkFadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
 .section--hidden {
   opacity: 0;
   -webkit-transform: translateY(8rem);
@@ -1505,6 +1531,9 @@ body {
     width: 100%;
     margin: auto;
   }
+  .nav__list .nav__link {
+    opacity: 0;
+  }
   .nav__list .ri-close-fill {
     visibility: visible;
     position: absolute;
@@ -2008,8 +2037,8 @@ html {
 }
 
 .event__container .film:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .event__container .film img {

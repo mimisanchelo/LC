@@ -29,10 +29,34 @@ window.addEventListener('load', function () {
 const openNav = function () {
   navlist.classList.add('nav--open')
   navbarContainer.classList.add('nav__overlay')
+
+  navLinks.forEach(function (link, i) {
+    if (window.innerWidth > 950) {
+      return
+    } else {
+      if (link.style.animation) {
+        link.style.animation = ''
+      } else {
+        link.style.animation = `linkFadeIn 0.4s ease forwards ${i / 12 + 0.2}s`
+      }
+    }
+  })
 }
 const closeNav = function () {
   navlist.classList.remove('nav--open')
   navbarContainer.classList.remove('nav__overlay')
+
+  navLinks.forEach(function (link, i) {
+    if (window.innerWidth > 950) {
+      return
+    } else {
+      if (link.style.animation) {
+        link.style.animation = ''
+      } else {
+        link.style.animation = `linkFadeIn 0.4s ease forwards ${i / 12 + 0.2}s`
+      }
+    }
+  })
 }
 
 //////////////////////////////// NAVBAR MOBILE

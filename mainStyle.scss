@@ -286,6 +286,19 @@ body {
   transition: 0.4s;
 }
 
+// ANIMATION
+
+@keyframes linkFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
 // RESERVATION
 .section--hidden {
   opacity: 0;
@@ -908,6 +921,9 @@ body {
         width: 100%;
         margin: auto;
       }
+    }
+    .nav__link {
+      opacity: 0;
     }
     .ri-close-fill {
       visibility: visible;
