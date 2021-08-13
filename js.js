@@ -160,10 +160,10 @@ const headerCoords = header.getBoundingClientRect()
 const stickyNav = function (entries) {
   const [entry] = entries
 
-  if (!entry.isIntersecting && window.innerWidth < 950) {
+  if (!entry.isIntersecting && window.innerWidth < 990) {
     return
   } else {
-    if (!entry.isIntersecting && window.innerWidth > 950) {
+    if (!entry.isIntersecting && window.innerWidth > 990) {
       navbarContainer.classList.add('nav__sticky')
     } else {
       navbarContainer.classList.remove('nav__sticky')

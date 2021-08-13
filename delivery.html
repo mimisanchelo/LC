@@ -9,66 +9,634 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="mainScss.css" />
     <link rel="shortcut icon" href="material/favicons.png" />
-    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-    <script defer src="js.js"></script>
+    <link rel="stylesheet" href="mainStyle.css" />
+    <link rel="stylesheet" href="style/deliveryStyle.css" />
+    <link rel="stylesheet" href="style/navbar.css" />
+    <link rel="stylesheet" href="style/eventSubStyle.css" />
+    <link rel="stylesheet" href="style/animationSwup.css" />
+    
+    <script defer src="script/scriptSecondary.js"></script>
+    <script defer src="script/scriptModal.js"></script>
+  
   </head>
   <body>
-    <nav class="navbar__container" id="navbar-container">
-      <ul class="nav__list">
-        <li class="nav__items">
-          <a class="logohome" href="header"
-            ><img src="material/resize/logolong300.png" alt=""
-          /></a>
-        </li>
-        <li class="nav__items">
-          <a href="/index.html" class="home nav__link">Home</a>
-        </li>
-        <li class="nav__items">
-          <a href="#reservation" class="reservation nav__link">Reservation</a>
-        </li>
-        <li class="nav__items">
-          <a href="#hour" class="nav__link">Hours</a>
-        </li>
-        <li class="nav__items">
-          <a href="#menu" class="nav__link">Menu</a>
-        </li>
-        <li class="nav__items">
-          <a href="#about" class="nav__link">About</a>
-        </li>
-        <li class="nav__items">
-          <a href="/gallery.html" class="nav__link">Gallery</a>
-        </li>
-        <li class="nav__items">
-          <a href="/delivery.html" class="nav__link nav__link--active"
-            >Delivery</a
-          >
-        </li>
-        <li class="nav__items">
-          <a href="/events.html" class="nav__link">Events</a>
-        </li>
-        <li class="nav__items">
-          <a href="#subscribe" class="nav__link">Subscribe</a>
-        </li>
-        <i class="ri-close-fill nav--close"></i>
+    <main id="swup">
+    <header>
+      <div class="nav__over">
+        <nav class="navbar__container--sub" id="navbar-container">
 
-        <div class="nav__socials">
-          <a href="https://www.facebook.com/" target="__blank"
-            ><i class="ri-facebook-circle-fill"></i
-          ></a>
-          <a href="https://www.instagram.com/louisciferbw" target="__blank"
-            ><i class="ri-instagram-line"></i
-          ></a>
-        </div>
-      </ul>
-      <div class="nav__toggle">
-        <i class="ri-dashboard-fill"></i>
+            <div class="nav__items--sub">
+              <a class="logohome--sub" href="#"
+                ><img src="material/resize/logolong170.png" alt=""
+              /></a>
+            </div>
+
+            <div class="navbar__links--sub">
+              <ul class="nav__list--sub">
+                <li class="nav__items--sub"><a class="logohome--nav" href="/index.html"
+                ><img src="material/resize/logolong300.png" alt=""
+                /></a></li>
+                <li class="nav__items--sub">
+                  <a href="/index.html" class="nav__link--sub"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/index.html#reservation" class="nav__link--sub"
+                    >Reservation</a
+                  >
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/index.html#hour" class="nav__link--sub">Hours</a>
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/index.html#menu" class="nav__link--sub">Menu</a>
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/index.html#about" class="nav__link--sub">About</a>
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/gallery.html" class="nav__link--sub">Gallery</a>
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/delivery.html" class="nav__link--sub nav__link--active">Delivery</a>
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/events.html" class="nav__link--sub ">Events</a>
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/subscribe.html" class="nav__link--sub">Subscribe</a>
+                </li>
+                <i class="ri-close-fill nav--close"></i>
+                <div class="nav__socials--sub">
+                  <a href="https://www.facebook.com/" target="__blank"
+                      ><i class="icon ri-facebook-circle-fill"></i
+                  ></a>
+                  <a href="https://www.instagram.com/louisciferbw" target="__blank"
+                      ><i class=" icon ri-instagram-line"></i
+                  ></a>
+                </div>
+              </ul>
+              
+            </div>
+           
+            
+
+        </nav>
+
       </div>
-    </nav>
-    <h1>Delivery</h1>
+        <div class="nav__toggle--sub">
+          <i class="ri-dashboard-fill"></i>
+        </div>
+  </header>
 
+<div class="section delivery">
+  <h1 class="transition-fadeIn event__header">BEER DELIVERY MINIMUM $40 </h1>
+  <div class="delivery__note transition-slideDown">
     
+    <p> Same Day Toronto Delivery if order in by 2pm. NO DELIVERY SAT OR SUN. </p>
+    <p class="delivery__style">Toronto and immediate GTA delivery only.</p>
+    <p>BEER RETAIL STORE OPEN EVERYDAY 11:30AM-10PM
+
+      PATIO IS NOW OPEN!! </p>
+     <p>MON-THURS 11:30AM-10PM FRI 11:30AM-12AM SAT 11AM-12AM 
+      
+      SUN 11AM-10PM</p> 
+      <p>FREE DELIVERY with orders more than $75.  <br>
+      Enter promo code <span class="delivery__style">FREEDELIVERY</span> at checkout.</p>
+  </div>
+
+  <div class="delivery__section">
+    <div class="delivery__choice" data-modal='modal1'>
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1620928195501-DGHJ60VPX3EFRG24GV0S/Parkside+IPA.jpg?format=1000w" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">Parkside</h4>
+        <p class="delivery__price">$ 3.85 CAD</p>
+      </div>
+    </div>
+    <div class="delivery__choice" data-modal='modal2'>
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1585245672919-E2QDAAMBLP97NTDHHTTI/IMG_8985.jpg?format=500w" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">Gothic American Brown Ale</h4>
+        <p class="delivery__price">$ 3.80 CAD</p>
+      </div>
+    </div>
+    <div class="delivery__choice" data-modal='modal3'>
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1585263863131-HWH49JBOZ0R8RQNBZYCI/IMG_8987.jpg?format=500w" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">Original Sin Blond Ale</h4>
+        <p class="delivery__price">$ 3.80 CAD</p>
+      </div>
+    </div>
+    <div class="delivery__choice" data-modal='modal4'>
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1585245597959-BYY046OEK19NJ0OECS5G/IMG_8984.jpg?format=500w" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">Gates of Ale IPA</h4>
+        <p class="delivery__price">$ 4.10 CAD</p>
+      </div>
+    </div>
+    <div class="delivery__choice" data-modal='modal5'>
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1585164625342-NKFK4EPVCXHKCTPMUCGI/IMG_8983.jpg?format=500w" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">Louis Cifer Lager</h4>
+        <p class="delivery__price">$ 3.80 CAD</p>
+      </div>
+    </div>
+    <div class="delivery__choice" data-modal='modal6'>
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1585245929827-54VMI5R14MJPV0YNSBNG/IMG_8989.jpg?format=500w" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">Dry Irish Stout</h4>
+        <p class="delivery__price">$ 3.85 CAD</p>
+      </div>
+    </div>
+    <div class="delivery__choice" data-modal='modal7'>
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1585164699932-5L3KFUZ2RS8WR7XK5IVU/IMG_8981.jpg?format=500w" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">E.S.B. Extra Special Bitter</h4>
+        <p class="delivery__price">$ 3.80 CAD</p>
+      </div>
+    </div>
+    <div class="delivery__choice" data-modal='modal8'>
+      <img src="https://www.lcbo.com/content/dam/lcbo/products/011300.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">Coconut Lemongrass Thai-PA</h4>
+        <p class="delivery__price">$ 3.90 CAD</p>
+      </div>
+    </div>
+    <div class="delivery__choice" data-modal='modal9'>
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1585245441223-2DIVOEPS5OIOY6Z6DXYD/IMG_8982.jpg?format=500w" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">Witcraft Belgian Wheat</h4>
+        <p class="delivery__price">$ 3.85 CAD</p>
+      </div>
+    </div>
+    <div class="delivery__choice" data-modal='modal10'>
+      <img src="https://www.lcbo.com/content/dam/lcbo/products/573881.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">Glutenberg IPA</h4>
+        <p class="delivery__price">$ 6.25 CAD</p>
+      </div>
+    </div>
+    <div class="delivery__choice" data-modal='modal11'>
+      <img src="https://untappd.akamaized.net/photos/2021_06_16/495b465e631c7bbb1110a883534a924c_640x640.jpg" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">Puddicombe Cheery Cider</h4>
+        <p class="delivery__price">$ 6.35 CAD</p>
+      </div>
+    </div>
+    <div class="delivery__choice" data-modal='modal12'>
+      <img src="https://www.lcbo.com/content/dam/lcbo/products/497719.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">Puddicombe Apple Cider</h4>
+        <p class="delivery__price">$ 6.35 CAD</p>
+      </div>
+    </div>
+    <div class="delivery__choice" data-modal='modal13'> 
+      <img src="https://pbs.twimg.com/media/E5tJ0wtWUAQAEz9.jpg" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">Puddicombe Apple Cranberry Cider</h4>
+        <p class="delivery__price">$ 6.35 CAD</p>
+      </div>
+    </div>
+    <div class="delivery__choice" data-modal='modal14'>
+      <img src="https://pbs.twimg.com/media/E5tJ0wtWUAQAEz9.jpg" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">Puddicombe Peach Cider</h4>
+        <p class="delivery__price">$ 6.35 CAD</p>
+      </div>
+    </div>
+    <div class="delivery__choice" data-modal='modal15'>
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1590350464251-VPFD24WB44S7JES6GU87/LOUIS+CIFER+-+MOCK+UP+1.jpg?format=1000w" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">Louis Cifer Face Mask</h4>
+        <p class="delivery__price">$ 13.50 CAD</p>
+      </div>
+    </div>
+    <div class="delivery__choice" data-modal='modal16'>
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1586465573312-9UFKSUDR9ZYPGSEDYB15/1.png?format=2500w" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">Beer Gift Card</h4>
+        <p class="delivery__price">from $25.00 CAD</p>
+      </div>
+    </div>
+    <div class="delivery__choice" data-modal='modal17'>
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1607803289653-87FD9C31OWAK4S85KN0Z/Villa+Sandi.JPG?format=2500w" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">Villa Sandi, Pinot Grigio</h4>
+        <p class="delivery__price">$ 27.00 CAD</p>
+      </div>
+    </div>
+    <div class="delivery__choice" data-modal='modal18'>
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1607803378671-QJGP4FD0QLQLP2YYTX0T/Leaping+Horse.JPG?format=2500w" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">Leaping Horse Cabernet</h4>
+        <p class="delivery__price">$ 29.00 CAD</p>
+      </div>
+    </div>
+    <div class="delivery__choice" data-modal='modal19'>
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1608488303207-NVV09S3ID9GW0M2KTHCG/Laurent+Miquel.png?format=1500w" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">Laurent Miquel, Vendages Nocturne Rouge</h4>
+        <p class="delivery__price">$ 25.00 CAD</p>
+      </div>
+    </div>
+    <div class="delivery__choice" data-modal='modal20'>
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1607803493438-E0VL1VUI3G0RIMF9IN9A/Laurent+Miquel+Rose+New.JPG?format=2500w" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">Laurent Miquel Rose</h4>
+        <p class="delivery__price">$ 29.00 CAD</p>
+      </div>
+    </div>
+    <div class="delivery__choice" data-modal='modal21'>
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1589493252251-IZCVGIKSS6VGH2WG8XHL/pint+glass+1.jpg?format=750w" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">Pint Glass</h4>
+        <p class="delivery__price">$ 9.00 CAD</p>
+      </div>
+    </div>
+    <div class="delivery__choice" data-modal='modal22'>
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1589493496324-DQ7YI3I1694OZ8LIBEBC/taster+glass+1.jpg?format=750w" alt="">
+      <div class="delivery__info">
+        <h4 class="delivery__name">5oz Taster Glass</h4>
+        <p class="delivery__price">$ 5.75 CAD</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALS -->
+
+  <div class="modal" id="modal1">
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1620928195501-DGHJ60VPX3EFRG24GV0S/Parkside+IPA.jpg?format=1000w" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">Parkside 473 ml</h2>
+        <p class="modal__description">India session ale brewed to be crushable and refreshing, but hoppy enough for those who want a big kick of flavour. Hopped with Vic Secret and El Dorado hops for a tropical citrus profile.</p>
+        <p class="modal__price">$ 5.75 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" max="200" value="1">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal2">
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1585245672919-E2QDAAMBLP97NTDHHTTI/IMG_8985.jpg?format=500w" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">Gothic American Brown Ale 473 ml</h2>
+        <p class="modal__description">5.8% ABV/ 36 IBU. Slightly nutty, smooth dark caramel and malt flavours with a lingering bitterness, Citra hops add to a wonderful aroma. </p>
+        <p class="modal__price">$ 3.85 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" max="200" value="1">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal3">
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1585263863131-HWH49JBOZ0R8RQNBZYCI/IMG_8987.jpg?format=500w" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">Original Sin Blond Ale 473 ml</h2>
+        <p class="modal__description">4.8% ABV/ 18 IBU.
+          A fruity blonde ale with notes of cereal grain, pear and a clean finish. </p>
+        <p class="modal__price">$ 3.80 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" max="200" value="1">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal4">
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1585245597959-BYY046OEK19NJ0OECS5G/IMG_8984.jpg?format=500w" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">Gates of Ale IPA 473 ml</h2>
+        <p class="modal__description">5.7% ABV/ 40 IBU.
+          A highly approachable IPA featuring low bitterness and a clean citrus finish.</p>
+        <p class="modal__price">$ 4.10 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" max="200" value="1">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal5">
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1585164625342-NKFK4EPVCXHKCTPMUCGI/IMG_8983.jpg?format=500w" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">Louis Cifer Lager 473 ml</h2>
+        <p class="modal__description">India session ale brewed to be crushable and refreshing, but hoppy enough for those who want a big kick of flavour. Hopped with Vic Secret and El Dorado hops for a tropical citrus profile.</p>
+        <p class="modal__price">$ 5.75 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" max="200" value="1">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal6">
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1585245929827-54VMI5R14MJPV0YNSBNG/IMG_8989.jpg?format=500w" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">Dry Irish Stout 473 ml</h2>
+        <p class="modal__description">4.4 ABV/28 IBU.
+          Smooth stout with flavours and aromas of coffee and dark chocolate with a dry finish. </p>
+        <p class="modal__price">$ 3.80 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" max="200" value="1">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal7">
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1585164699932-5L3KFUZ2RS8WR7XK5IVU/IMG_8981.jpg?format=500w" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">E.S.B. Extra Special Bitter 473 ml</h2>
+        <p class="modal__description">5.2 ABV/30 IBU.
+          True to English style bitter, this standard English style ale with a slight bitterness that finishes with malty caramel flavours. If you like Rickards Red or Creemore, then you’ll love this!
+          
+          </p>
+        <p class="modal__price">$ 3.80 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" max="200" value="1">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal8">
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://www.lcbo.com/content/dam/lcbo/products/011300.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">Coconut Lemongrass Thai-PA 473ml</h2>
+        <p class="modal__description">6.5% ABV/40 IBU.
+          A unique blend of Coconut, lemon grass, and hops in a tropical style beer. </p>
+        <p class="modal__price">$ 3.90 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" max="200" value="1">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal9">
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1585245441223-2DIVOEPS5OIOY6Z6DXYD/IMG_8982.jpg?format=500w" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">Witcraft Belgian White 473 ml</h2>
+        <p class="modal__description">5% ABV/ 21 IBU.
+          A Belgian style wheat beer lightly spiced with orange and coriander. Light and crisp</p>
+        <p class="modal__price">$ 5.75 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" max="200" value="1">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal10">
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://www.lcbo.com/content/dam/lcbo/products/573881.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">Glutenberg IPA</h2>
+        <p class="modal__description">From Innovative Quebec brewery Glutenberg, a superb and flavourful gluten-free IPA made from millet, buckwheat, corn and black rice. Pale gold in colour with aromas and flavours of cereal grain, grapefruit, tea and apple.</p>
+        <p class="modal__price">$ 6.25 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" max="200" value="1">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal11">
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://untappd.akamaized.net/photos/2021_06_16/495b465e631c7bbb1110a883534a924c_640x640.jpg" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">Puddiecombe Cherry Cider</h2>
+        <p class="modal__description">Ripe berry and blossoms with gripping sweet amaretto fudge.
+          This adventure starts with currant and juicy plum, the mid palate has light clove and dark berry. Your palate is left with the delicious taste of cherry pie.</p>
+        <p class="modal__price">$ 6.35 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" max="200" value="1">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal12">
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://www.lcbo.com/content/dam/lcbo/products/497719.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">Puddiecombe Apple Cider</h2>
+        <p class="modal__description">Made from a fresh pressed blend of twelve Ontario apple varieties grown on our family farm. Gluten free with no artificial sugars.</p>
+        <p class="modal__price">$ 6.35 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" max="200" value="1">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal13">
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://pbs.twimg.com/media/E5tJ0wtWUAQAEz9.jpg" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">Puddiecome Apple Cranberry Cider
+        </h2>
+        <p class="modal__description">Made from a fresh blend of our main stream, twelve variety apple cider and a blush addition of fresh pressed cranberry juice, straight from the bogs of Muskoka. The cranberry is prominent in the bouquet and pallet, with a light crisp finish.</p>
+        <p class="modal__price">$ 6.35 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" max="200" value="1">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal14">
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://pbs.twimg.com/media/E5tJ0wtWUAQAEz9.jpg" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">Puddiecombe Peach Cider</h2>
+        <p class="modal__description">Spiced peach pie with coriander and cinnamon.
+          Palate: bursting with fresh juice peach puree with a slight light spice, a balance between light acidity, all spice and mandarin orange leave your palate quenching for more</p>
+        <p class="modal__price">$ 6.35 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" max="200" value="1">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal15">
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1590350464251-VPFD24WB44S7JES6GU87/LOUIS+CIFER+-+MOCK+UP+1.jpg?format=1000w" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">Louis Cifer Face Mask</h2>
+        <p class="modal__description">Louis Cifer Face mask</p>
+        <p class="modal__price">$ 13.50 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" max="200" value="1">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal16">
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1586465573312-9UFKSUDR9ZYPGSEDYB15/1.png?format=2500w" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">Beer Gift Card</h2>
+        <p class="modal__description">Purchasing this digital gift card creates a unique code. The gift card recipient can enter this code at checkout to subtract the gift card value from their order total.
+
+        This gift card never expires.</p>
+        <p class="modal__price">from $ 25.00 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" step="5" max="100" value="25">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal17">
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1607803289653-87FD9C31OWAK4S85KN0Z/Villa+Sandi.JPG?format=2500w" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">Villa Sandi, Pinot Grigio</h2>
+        <p class="modal__description"></p>
+        <p class="modal__price">$ 27.00 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" max="100" value="1">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal18">
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1607803378671-QJGP4FD0QLQLP2YYTX0T/Leaping+Horse.JPG?format=2500w" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">Leaping Horse Cabernet</h2>
+        <p class="modal__description">A luscious rich California Cab with chocolate, cherry, spice and black currant.</p>
+        <p class="modal__price">$ 29.00 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" max="100" value="1">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal19">
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1608488303207-NVV09S3ID9GW0M2KTHCG/Laurent+Miquel.png?format=1500w" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">Laurent Miquel, Vendages Nocturne Rouge</h2>
+        <p class="modal__description">South of France.
+          The robe is a beautiful garnet red. Fruit ﬁlled aromas with raspberry and red berries. On the palate, smooth and elegant.
+          </p>
+        <p class="modal__price">$ 5.75 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" max="100" value="1">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal20">
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1607803493438-E0VL1VUI3G0RIMF9IN9A/Laurent+Miquel+Rose+New.JPG?format=2500w" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">Laurent Miquel Rose</h2>
+        <p class="modal__description">Elegant pale pink colour. Fresh raspberry aromas and a hint of citrus. Crisp on the palate with a soft fruity finish.</p>
+        <p class="modal__price">$ 29.00 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" max="100" value="1">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal21">  
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1589493252251-IZCVGIKSS6VGH2WG8XHL/pint+glass+1.jpg?format=750w" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">Pint Glass</h2>
+        <p class="modal__description"></p>
+        <p class="modal__price">$ 9.00 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" max="100" value="1">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal22">
+    <div class="modal__content">
+      <div class="modal__left">
+        <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1589493496324-DQ7YI3I1694OZ8LIBEBC/taster+glass+1.jpg?format=750w" alt="">
+      </div>
+      <div class="modal__right">
+        <h2 class="modal__name">5oz Taster Glass</h2>
+        <p class="modal__description"></p>
+        <p class="modal__price">$ 5.75 CAD</p>
+          <label class="modal__quantity" for="quantity">Quantity: </label>
+          <input class="modal__input" type="number" max="100" value="1">
+          <button class="modal__add">Add to Cart</button>
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+  
     <section class="section footer">
       <div class="section__img">
         <a class="footer__logo--home" href="/index.html" ><img src="material/resize/logolong350.png" alt="" /></a>
@@ -107,13 +675,13 @@
               <a href="/index.html#reservation" class="footer__link">Reservation</a>
             </li>
             <li class="footer__items">
-              <a href="/event.html" class="footer__link">Events</a>
+              <a href="/events.html" class="footer__link">Events</a>
             </li>
             <li class="footer__items">
               <a href="/delivery.html" class="footer__link">Delivery</a>
             </li>
             <li class="footer__items">
-              <a href="/index.html#sub" class="footer__link">Subscribe</a>
+              <a href="/subscribe.html" class="footer__link">Subscribe</a>
             </li>
           </ul>
         </div>
@@ -131,5 +699,10 @@
         </div>
       </div>
     </section>
+
+  </main>
+
+  <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+  <script defer  src="script/app.js"></script>
   </body>
 </html>

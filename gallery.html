@@ -9,130 +9,282 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="mainScss.css" />
     <link rel="shortcut icon" href="material/favicons.png" />
-    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-    <script defer src="js.js"></script>
+    <link rel="stylesheet" href="mainStyle.css" />
+    <link rel="stylesheet" href="style/eventSubStyle.css" />
+    <link rel="stylesheet" href="style/styleGallery.css" />
+    <link rel="stylesheet" href="style/navbar.css" />
+    <link rel="stylesheet" href="style/animationSwup.css" />
+    
+    
+    <script defer src="script/scriptSecondary.js"></script>
+    <script defer src="script/scriptGallery.js"></script>
+    
   </head>
   <body>
-    <header class="header__gallery">
-    <nav class="navbar__container" id="navbar-container">
-      <ul class="nav__list">
-        <li class="nav__items">
-          <a class="logohome" href="header"
-            ><img src="material/resize/logolong300.png" alt=""
-          /></a>
-        </li>
-        <li class="nav__items">
-          <a href="/index.html" class="home nav__link">Home</a>
-        </li>
-        <li class="nav__items">
-          <a href="#reservation" class="reservation nav__link">Reservation</a>
-        </li>
-        <li class="nav__items">
-          <a href="#hour" class="nav__link">Hours</a>
-        </li>
-        <li class="nav__items">
-          <a href="#menu" class="nav__link">Menu</a>
-        </li>
-        <li class="nav__items">
-          <a href="#about" class="nav__link">About</a>
-        </li>
-        <li class="nav__items">
-          <a href="/gallery.html" class="nav__link nav__link--active"
-            >Gallery</a
-          >
-        </li>
-        <li class="nav__items">
-          <a href="/delivery.html" class="nav__link">Delivery</a>
-        </li>
-        <li class="nav__items">
-          <a href="/events.html" class="nav__link">Events</a>
-        </li>
-        <li class="nav__items">
-          <a href="#subscribe" class="nav__link">Subscribe</a>
-        </li>
-        <i class="ri-close-fill nav--close"></i>
+    <main id="swup">
+    <header>
+      <div class="nav__over">
+        <nav class="navbar__container--sub" id="navbar-container">
 
-        <div class="nav__socials">
-          <a href="https://www.facebook.com/" target="__blank"
-            ><i class="ri-facebook-circle-fill"></i
-          ></a>
-          <a href="https://www.instagram.com/louisciferbw" target="__blank"
-            ><i class="ri-instagram-line"></i
-          ></a>
-        </div>
-      </ul>
+            <div class="nav__items--sub">
+              <a class="logohome--sub" href="#"
+                ><img src="material/resize/logolong170.png" alt=""
+              /></a>
+            </div>
 
-      <div class="nav__toggle">
-        <i class="ri-dashboard-fill"></i>
+            <div class="navbar__links--sub">
+              <ul class="nav__list--sub">
+                <li class="nav__items--sub"><a class="logohome--nav" href="/index.html"
+                ><img src="material/resize/logolong300.png" alt=""
+                /></a></li>
+                <li class="nav__items--sub">
+                  <a href="/index.html" class="nav__link--sub"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/index.html#reservation" class="nav__link--sub"
+                    >Reservation</a
+                  >
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/index.html#hour" class="nav__link--sub">Hours</a>
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/index.html#menu" class="nav__link--sub">Menu</a>
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/index.html#about" class="nav__link--sub">About</a>
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/gallery.html" class="nav__link--sub nav__link--active">Gallery</a>
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/delivery.html" class="nav__link--sub">Delivery</a>
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/events.html" class="nav__link--sub">Events</a>
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/subscribe.html" class="nav__link--sub">Subscribe</a>
+                </li>
+                <i class="ri-close-fill nav--close"></i>
+                <div class="nav__socials--sub">
+                  <a href="https://www.facebook.com/" target="__blank"
+                      ><i class="icon ri-facebook-circle-fill"></i
+                  ></a>
+                  <a href="https://www.instagram.com/louisciferbw" target="__blank"
+                      ><i class=" icon ri-instagram-line"></i
+                  ></a>
+                </div>
+              </ul>
+              
+            </div>
+           
+            
+
+        </nav>
+
       </div>
-    </nav>
+        <div class="nav__toggle--sub">
+          <i class="ri-dashboard-fill"></i>
+        </div>
   </header>
-    <h1>Gallery</h1>
 
-    
-    <section class="section footer">
-      <div class="section__img">
-        <a class="footer__logo--home" href="/index.html" ><img src="material/resize/logolong350.png" alt="" /></a>
+<section class="section gallery">
+  <h1 class="event__header transition-fadeIn">Our Gallery</h1>
+  <div class="gallery__container">
+    <div class="gallery__img img1">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1607365277828-P7N45U514UX8096J8YUS/Original+Sin+DD.jpg?format=2500w" alt="">
+    </div>
+    <div class="gallery__img img2">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1607365209642-2SZ9NH7JSLZZP7D7EH05/Lager.jpg?format=750w" alt="">
+    </div>
+    <div class="gallery__img img3">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1607363407776-RGHPNAY88QK8WJ2UYRLR/Gates+of+Ale.jpg?format=2500w" alt="">
+    </div>
+    <div class="gallery__img img4">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1607363357335-HA2DY1V79LYWUSP5XJQT/ESB.jpg?format=750w" alt="">
+    </div>
+    <div class="gallery__img img5">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1607363408025-4M8HZGDZNFTGHZKPFO7X/Gothic+Brown.jpg?format=2500w" alt="">
+    </div>
+    <div class="gallery__img img6">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1607362943943-SZQ7LEZNHHV1ZUAZY7AG/Beer+and+Soft+Pretzels.jpg?format=750w" alt="">
+    </div>
+    <div class="gallery__img img7"><img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1607362944161-PSP3TDIK41T5QF1S8M2N/Beer+and+Wings.jpg?format=2500w" alt=""></div>
+    <div class="gallery__img img8">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1607365230431-E9AACSRI8BEY9R3IG4J6/Netherworld+Nachos.jpg?format=750w" alt="">
+    </div>
+    <div class="gallery__img img9"><img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1434237762089-39D78T9NN1160WTQG0UU/image-asset.jpeg?format=750w" alt=""></div>
+    <div class="gallery__img img10">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1569107182125-E0FH6NLOPT4HHJFORS2O/steve+anthony.jpg?format=750w" alt="">
+    </div>
+    <div class="gallery__img img11">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1569102120573-AL3HR0TE6QX7ZJMXH5HG/host+stand.jpg?format=500w" alt="">
+    </div>
+    <div class="gallery__img img12">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1569107354108-91W1WX0TDM588R4QO1Q8/IMG_8954.jpg?format=500w" alt="">
+    </div> 
+    <div class="gallery__img img13">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1569106187108-VMMSIZXSNU8CNA9MD38H/IMG_8911.jpg?format=500w" alt="">
+    </div>
+    <div class="gallery__img img14">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1523485807105-NM057SPRSQNQ6G2LNEF6/IMG_7039+%282%29.JPG?format=500w" alt="">
+    </div> 
+    <div class="gallery__img img15">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1523485761680-E2V6DJAJFN59158QQZE8/IMG_7058+%282%29.JPG?format=500w" alt="">
+    </div> 
+    <div class="gallery__img img16">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1434231070373-5C6EUC8406KBF9AYCGXP/image-asset.jpeg?format=500w" alt="">
+    </div> 
+    <div class="gallery__img img17">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1523485837056-NU5B1X5M7U5FHW2PG31P/IMG_7093+%282%29.JPG?format=500w" alt="">
+    </div> 
+    <div class="gallery__img img18">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1523485691986-VMM5DAJX7X2VFHZFKQVM/IMG_6379+%282%29.jpg?format=500w" alt="">
+    </div>
+    <div class="gallery__img img19">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1413386650889-RX0R2QOH3XQS57JFRM9T/IMG_2065.JPG?format=500w" alt="">
+    </div>
+    <div class="gallery__img img20">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1413386647838-0TZ307XDZ8XNPN2XOL3M/IMG_2063.JPG?format=500w" alt="">
+    </div>
+    <div class="gallery__img img21">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1434237652171-B5F7SGODB2052IF7N6J8/image-asset.jpeg?format=500w" alt="">
+    </div>
+    <div class="gallery__img img22">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1545850773186-MU2W85MCVKAGGGDT81SZ/47384275_588664888251142_5832841926163824640_n.jpg?format=500w" alt="">
+    </div>
+    <div class="gallery__img img23">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1545851085403-JV146TWSO3AAP9WA4QFH/47395462_222772745282722_1965138088439054336_n.jpg?format=500w" alt="">
+    </div>
+    <div class="gallery__img img24">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1545851721027-Z9IH3STB9VFQEN62UQ06/47395462_222772745282722_1965138088439054336_n.jpg?format=500w" alt="">
+    </div>
+    <div class="gallery__img img25">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1545851756186-Z4DQHO96KWOUIJVNT66C/47578325_369323780506176_1010760784348708864_n.jpg?format=500w" alt="">
+    </div>
+    <div class="gallery__img img26">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1607362946473-7K6NOBGAMILM482ZV1LE/Big+Breakfast.jpg?format=500w" alt="">
+    </div>
+    <div class="gallery__img img27">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1607363355314-B9EZ3EYF6RJQ6J96HDI2/fish+and+chips.jpg?format=500w" alt="">
+    </div> 
+    <div class="gallery__img img28">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1621359682977-28FC8AHED9WIUM5E8AU1/beer+line+up.jpg?format=500w" alt="">
+    </div>
+    <div class="gallery__img img29">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1621360355810-6RMUHEWTFCXERGFVNGCC/covid+patio+back.jpg?format=500w" alt="">
+    </div>
+    <div class="gallery__img img30">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1621360403166-VVHIY9IQX6VTGVM60UYZ/nba+patio.jpg?format=500w" alt="">
+    </div>
+    <div class="gallery__img img31">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1621360545483-DTZ8Q8JNQ8D484J4FUE0/pods+patio.jpg?format=2500w" alt="">
+    </div>
+    <div class="gallery__img img32">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1621361506488-4SUQZSLFUHWJY0Q64GQN/brewery+2.jpg?format=500w" alt="">
+    </div>
+    <div class="gallery__img img33">
+      <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1621362386939-Q20DRDIFOKUMRJNQY0VR/brewery.jpg?format=500w" alt="">
+    </div> 
+  </div>
+
+  
+  <div class="preview-box">
+    <div class="details">
+      <span class="title">
+        Image <p class="current-img"></p>
+        of <p class="total-img"></p>
+      </span>
+    </div>
+    <div class="img__box">
+      <div class="slide prev">
+        <i class="ri ri-arrow-left-line"></i>
       </div>
-      <div class="footer-wrap">
-        <div class="footer__info">
-          <h3 class="footer__contact--black">Contact</h3> 
-          <div class="footer__list">
-            <p class="footer__items"><h4 class="footer__contact--black">Location:</h4>417 Danforth Ave, </br> Toronto, ON, Canada,</br>  M4K 1P1</p>
-            <p class="footer__items"><h4 class="footer__contact--black">Phone:</h4>+1 (647) 1234123</p>
-            <p class="footer__items"><h4 class="footer__contact--black">Email:</h4>louiscifer@gmail.com</p>
-          </div>
-        </div>
-        <div class="footer__info">
-          <h3 class="footer__contact--black">Info</h3>
-          <ul class="footer__list"> 
-            <li class="footer__items">
-              <a href="/index.html#about" class="footer__link">About</a>
-            </li>
-            <li class="footer__items">
-              <a href="/index.html#hour" class="footer__link">Hours</a>
-            </li>
-            <li class="footer__items">
-              <a href="/index.html#menu" class="footer__link">Menu</a>
-            </li>
-            <li class="footer__items">
-              <a href="/gallery.html" class="footer__link">Gallery</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__info">
-          <h3 class="footer__contact--black">Things to Do</h3> 
-          <ul class="footer__list">
+      <div class="slide next">
+        <i class=" ri ri-arrow-right-line"></i>
+      </div>
+      <img src="" alt="">
+    </div>
+    <i class="ri-close-line box__close"></i>
+  </div>
+</div>
 
-            <li class="footer__items">
-              <a href="/index.html#reservation" class="footer__link">Reservation</a>
-            </li>
-            <li class="footer__items">
-              <a href="/event.html" class="footer__link">Events</a>
-            </li>
-            <li class="footer__items">
-              <a href="/delivery.html" class="footer__link">Delivery</a>
-            </li>
-            <li class="footer__items">
-              <a href="/index.html#sub" class="footer__link">Subscribe</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__socials">
-          <h3 class="footer__contact--black">Social Links</h3>
-          <div class="footer__social--icons">
-            <a href="https://www.facebook.com/" target="__blank"
-            ><i class="ri-facebook-circle-fill"></i
+
+</section>
+
+
+
+<section class="section footer">
+  <div class="section__img">
+    <a class="footer__logo--home" href="/index.html" ><img src="material/resize/logolong350.png" alt="" /></a>
+  </div>
+  <div class="footer-wrap">
+    <div class="footer__info">
+      <h3 class="footer__contact--black">Contact</h3> 
+      <div class="footer__list">
+        <p class="footer__items"><h4 class="footer__contact--black">Location:</h4>417 Danforth Ave, </br> Toronto, ON, Canada,</br>  M4K 1P1</p>
+        <p class="footer__items"><h4 class="footer__contact--black">Phone:</h4>+1 (647) 1234123</p>
+        <p class="footer__items"><h4 class="footer__contact--black">Email:</h4>louiscifer@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer__info">
+      <h3 class="footer__contact--black">Info</h3>
+      <ul class="footer__list"> 
+        <li class="footer__items">
+          <a href="/index.html#about" class="footer__link">About</a>
+        </li>
+        <li class="footer__items">
+          <a href="/index.html#hour" class="footer__link">Hours</a>
+        </li>
+        <li class="footer__items">
+          <a href="/index.html#menu" class="footer__link">Menu</a>
+        </li>
+        <li class="footer__items">
+          <a href="/gallery.html" class="footer__link">Gallery</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__info">
+      <h3 class="footer__contact--black">Things to Do</h3> 
+      <ul class="footer__list">
+        
+        <li class="footer__items">
+          <a href="/index.html#reservation" class="footer__link">Reservation</a>
+        </li>
+        <li class="footer__items">
+          <a href="/events.html" class="footer__link">Events</a>
+        </li>
+        <li class="footer__items">
+          <a href="/delivery.html" class="footer__link">Delivery</a>
+        </li>
+        <li class="footer__items">
+          <a href="/subscribe.html" class="footer__link">Subscribe</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__socials">
+      <h3 class="footer__contact--black">Social Links</h3>
+      <div class="footer__social--icons">
+        <a href="https://www.facebook.com/" target="__blank"
+        ><i class="ri-facebook-circle-fill"></i
           ></a>
           <a href="https://www.instagram.com/louisciferbw" target="__blank"
-            ><i class="ri-instagram-line"></i
-          ></a>
+          ><i class="ri-instagram-line"></i
+            ></a>
           </div>
           
         </div>
       </div>
     </section>
+
+  </main>
+    
+  <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+  <script defer  src="script/app.js"></script>
   </body>
-</html>
+  </html>
+  

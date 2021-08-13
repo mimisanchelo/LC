@@ -9,85 +9,88 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="mainScss.css" />
-    <link rel="stylesheet" href="secondStyle.css" />
-
+    <link rel="stylesheet" href="mainStyle.css" />
+    <link rel="stylesheet" href="style/eventSubStyle.css" />
+    <link rel="stylesheet" href="style/navbar.css" />
+    <link rel="stylesheet" href="style/animationSwup.css" />
     <link rel="shortcut icon" href="material/favicons.png" />
-
-    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-    <!-- <script defer src="js.js"></script> -->
-    <script defer src="scriptSecondary.js"></script>
+    <script defer src="script/scriptSecondary.js"></script>
+   
   </head>
   <body>
-    <header class="header__subscribe">
-            <nav class="navbar__container--sub" id="navbar-container">
-              <div class="nav__items">
-                <a class="logohome--sub" href="#"
-                  ><img src="material/resize/logolong170.png" alt=""
-                /></a>
-              </div>
-                <ul class="nav__list">
-                  <li class="nav__items"><a class="logohome--nav" href="/index.html"
-                  ><img src="material/resize/logolong300.png" alt=""
+    <main id="swup">
+    <header>
+        <nav class="navbar__container--sub" id="navbar-container">
+
+            <div class="nav__items--sub">
+              <a class="logohome--sub" href="#"
+                ><img src="material/resize/logolong170.png" alt=""
+              /></a>
+            </div>
+
+            <div class="navbar__links--sub">
+              <ul class="nav__list--sub">
+                <li class="nav__items--sub"><a class="logohome--nav" href="/index.html"
+                ><img src="material/resize/logolong300.png" alt=""
                 /></a></li>
-                  <li class="nav__items ">
-                    <a href="/index.html" class="home nav__link"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav__items ">
-                    <a href="/index.html#reservation" class="reservation nav__link"
-                      >Reservation</a
-                    >
-                  </li>
-                  <li class="nav__items">
-                    <a href="/index.html#hour" class="hour nav__link">Hours</a>
-                  </li>
-                  <li class="nav__items">
-                    <a href="/index.html#menu" class="menu nav__link">Menu</a>
-                  </li>
-                  <li class="nav__items">
-                    <a href="/index.html#about" class="about nav__link">About</a>
-                  </li>
-                  <li class="nav__items">
-                    <a href="/gallery.html" class="nav__link">Gallery</a>
-                  </li>
-                  <li class="nav__items">
-                    <a href="/delivery.html" class="nav__link">Delivery</a>
-                  </li>
-                  <li class="nav__items">
-                    <a href="/events.html" class="nav__link">Events</a>
-                  </li>
-                  <li class="nav__items">
-                    <a href="/subscribe.html" class="sub nav__link nav__link--active">Subscribe</a>
-                  </li>
-                  <i class="ri-close-fill nav--close"></i>
-
-                    <div class="nav__socials">
-                    <a href="https://www.facebook.com/" target="__blank"
-                        ><i class="ri-facebook-circle-fill"></i
-                    ></a>
-                    <a href="https://www.instagram.com/louisciferbw" target="__blank"
-                        ><i class="ri-instagram-line"></i
-                    ></a>
+                <li class="nav__items--sub">
+                  <a href="/index.html" class="nav__link--sub"
+                    >Home</a>
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/index.html#reservation" class="nav__link--sub"
+                    >Reservation</a>
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/index.html#hour" class="nav__link--sub">Hours</a>
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/index.html#menu" class="nav__link--sub">Menu</a>
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/index.html#about" class="nav__link--sub">About</a>
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/gallery.html" class="nav__link--sub">Gallery</a>
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/delivery.html" class="nav__link--sub">Delivery</a>
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/events.html" class="nav__link--sub ">Events</a>
+                </li>
+                <li class="nav__items--sub">
+                  <a href="/subscribe.html" class="nav__link--sub nav__link--active">Subscribe</a>
+                </li>
+                <i class="ri-close-fill nav--close"></i>
+                <div class="nav__socials--sub">
+                  <a href="https://www.facebook.com/" target="__blank"
+                      ><i class="icon ri-facebook-circle-fill"></i
+                  ></a>
+                  <a href="https://www.instagram.com/louisciferbw" target="__blank"
+                      ><i class=" icon ri-instagram-line"></i
+                  ></a>
                 </div>
-            </ul>
+              </ul>
+            </div>
+        </nav>
 
-                <div class="nav__toggle">
-                    <i class="ri-dashboard-fill"></i>
-                </div>
-            </nav>
+        <div class="nav__toggle--sub">
+          <i class="ri-dashboard-fill"></i>
+        </div>
+
   </header>
-      <main class="section subscribe">
+
+      <section class="section subscribe">
         <div class="subscribe__container">
           <div class="subscribe__left">
-            <img src="material/resize/sublogo.png" alt="">
+            <img class="transition-slideDown"  src="material/resize/sublogo.png" alt="">
           </div>
-          <div class="subscribe__right">
-            <h1 class="sub__header">JOIN THE MAILING LIST</h1>
+          <div class="subscribe__right transition-fadeIn">
+            <h1 class=" sub__header">JOIN THE MAILING LIST</h1>
             <p class="sub__content">Be the first to receive exclusive promotions & discounts. </p>
             <p class="sub__content">As well as the inside scoop on new beer releases!</p>
-            <form  action="results.html">
+            <form  action="results.html" method="GET">
                 <div>
                     <label for="name"></label>
                     <input name="name" type="text" id="name" placeholder=" First Name" required>
@@ -104,8 +107,8 @@
             </form>
           </div>
         </div>
-      </main>
-
+      </section>
+   
     
     <section class="section footer">
       <div class="section__img">
@@ -145,7 +148,7 @@
               <a href="/index.html#reservation" class="footer__link">Reservation</a>
             </li>
             <li class="footer__items">
-              <a href="/event.html" class="footer__link">Events</a>
+              <a href="/events.html" class="footer__link">Events</a>
             </li>
             <li class="footer__items">
               <a href="/delivery.html" class="footer__link">Delivery</a>
@@ -169,5 +172,9 @@
         </div>
       </div>
     </section>
+  </main>
+    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+    <script  defer src="script/app.js"></script>
+  
   </body>
 </html>
