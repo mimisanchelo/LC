@@ -4,6 +4,7 @@
 const navList = document.querySelector('.nav__list--sub')
 const navbarContainer = document.querySelector('.navbar__container--sub')
 const navLinks = document.querySelectorAll('.nav__link--sub')
+const overlay = document.querySelector('.nav__overlay--sub')
 // OVERLAY
 
 // BTNS
@@ -13,6 +14,7 @@ const btnNavListClose = document.querySelector('.nav--close')
 
 const openNav = function () {
   navList.classList.add('show__nav--sub')
+  navbarContainer.classList.add('nav__overlay--sub')
 
   navLinks.forEach(function (link, i) {
     if (window.innerWidth > 950) {
@@ -28,6 +30,7 @@ const openNav = function () {
 }
 const closeNav = function () {
   navList.classList.remove('show__nav--sub')
+  navbarContainer.classList.remove('nav__overlay--sub')
 
   navLinks.forEach(function (link, i) {
     if (window.innerWidth > 950) {
