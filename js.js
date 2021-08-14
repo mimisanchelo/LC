@@ -128,11 +128,11 @@ subscribeLink.addEventListener('click', function () {
   promotionContainer.remove()
   promotionOverlay.classList.add('hidden')
 })
-// MAKE IT VISIBLE
-// setTimeout(function () {
-//   promotionContainer.classList.remove('hidden')
-//   promotionOverlay.classList.remove('hidden')
-// }, 6000)
+//MAKE IT VISIBLE
+setTimeout(function () {
+  promotionContainer.classList.remove('hidden')
+  promotionOverlay.classList.remove('hidden')
+}, 6000)
 
 // ///////////////////////////////////////NAV STYLE ON SCROLL
 
@@ -157,24 +157,24 @@ window.addEventListener('scroll', () => {
 })
 ////////////////////////////////////////////// REVEAL SECTION
 
-// const revealSection = function (entries, observer) {
-//   const [entry] = entries
-//   if (!entry.isIntersecting) return
+const revealSection = function (entries, observer) {
+  const [entry] = entries
+  if (!entry.isIntersecting) return
 
-//   entry.target.classList.remove('section--hidden')
-//   observer.unobserve(entry.target)
-// }
+  entry.target.classList.remove('section--hidden')
+  observer.unobserve(entry.target)
+}
 
-// const observerSection = new IntersectionObserver(revealSection, {
-//   root: null,
-//   threshold: 0.1,
-// })
+const observerSection = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.1,
+})
 
-// allSections.forEach(function (section) {
-//   observerSection.observe(section)
+allSections.forEach(function (section) {
+  observerSection.observe(section)
 
-//   section.classList.add('section--hidden')
-// })
+  section.classList.add('section--hidden')
+})
 
 ///////////////////////////////////////////////// STICKY NAV
 
