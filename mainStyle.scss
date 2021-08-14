@@ -57,6 +57,7 @@ body {
     opacity: 0;
   }
   .banner {
+    border-radius: 10px;
     position: relative;
     background: rgb(255, 255, 255);
     display: flex;
@@ -1048,6 +1049,19 @@ body {
       background-color: black;
     }
   }
+  .subscribe__container {
+    height: 80%;
+    .subscribe__right {
+      .subscribe__header {
+        margin: 1rem auto 0;
+        min-width: 300px;
+        max-width: 600px;
+        color: rgb(73, 73, 73);
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+      }
+    }
+  }
 }
 @media screen and (max-width: 375px) {
   .logohome {
@@ -1070,9 +1084,28 @@ body {
       max-width: 300px;
     }
   }
+
+  .promotion {
+    height: 90%;
+  }
 }
 @media screen and (max-width: 320px) {
-  .nav__list {
-    row-gap: 1.3rem;
+  .promotion {
+    height: 90%;
+    .promo__header {
+      font-size: 1.5rem;
+    }
+    .banner {
+      padding: 1rem;
+    }
+    .subscribe {
+      height: 90%;
+      .subscribe__container {
+        max-height: 90%;
+      }
+    }
+    .nav__list {
+      row-gap: 1.3rem;
+    }
   }
 }
