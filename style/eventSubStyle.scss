@@ -229,32 +229,27 @@ html {
     width: 100%;
     border-radius: 10px;
     object-fit: cover;
-    &:hover {
-      transform: scale(1.1);
-    }
+    overflow: hidden;
     img {
       max-width: 100%;
+      transform: translate3d(0, -20px, 0) scale(1.1);
+      transition: all 0.4s;
+      &:hover {
+        transform: translate3d(0, 0, 0) scale(1);
+      }
     }
   }
   & > :first-child {
-    background-image: url(../material/resize/300.jpg);
-    background-repeat: no-repeat;
     grid-template-areas: 300;
   }
   & > :nth-child(2) {
-    background-image: url(../material/resize/deadpool.jpg);
-    background-repeat: no-repeat;
     grid-template-areas: dead;
   }
   & > :nth-child(3) {
-    background-image: url(../material/resize/joker.jpg);
-    background-repeat: no-repeat;
     grid-area: joker;
     max-height: 720px;
   }
   & > :last-child {
-    background-image: url(../material/resize/it.jpg);
-    background-repeat: no-repeat;
     grid-area: it;
   }
 }

@@ -144,10 +144,25 @@
     height: 30px;
   }
   .modal__add {
+    width: 130px;
+    text-align: center;
     display: block;
-    margin-top: 2rem;
-    padding: 10px 24px;
-    cursor: pointer;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    background-color: $mainColor;
+    color: $secondColorLight;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    &:hover {
+      background: $secondColorLight;
+      border: 1px solid $mainColor;
+      color: $mainColor;
+      padding: 9px 0;
+    }
     &:active {
       transform: scale(0.98);
     }
@@ -199,13 +214,14 @@
   }
   .modal__left {
     img {
-      height: 400px;
+      height: 300px;
     }
   }
   .modal__right {
     margin-top: 0rem;
     max-width: 500px;
     .modal__name {
+      font-size: 20px;
       padding-bottom: 1rem;
     }
     .modal__description {
@@ -213,13 +229,13 @@
       padding-bottom: 1rem;
     }
     .modal__price {
-      padding-bottom: 1rem;
+      padding-bottom: 0.5rem;
     }
     .modal__quantity {
       padding-bottom: 0.5rem;
     }
     .modal__add {
-      margin: 1rem auto 0rem;
+      margin: 0.5rem auto 0rem;
     }
     i {
       font-size: 1.7rem;
@@ -229,8 +245,53 @@
   }
 }
 
-@media screen and (max-width: 400px) {
-  .delivery__section {
-    padding: 1rem;
+@media screen and (max-width: 430px) {
+  .modal__right {
+    padding: 0 0.5rem;
+    .delivery__section {
+      padding: 1rem;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .modal__left {
+    img {
+      height: 220px;
+    }
+  }
+  .modal__right {
+    .modal__name {
+      font-size: 18px;
+      padding-bottom: 0.5rem;
+    }
+    .modal__description {
+      font-size: 15px;
+      padding-bottom: 0.5rem;
+    }
+    .modal__quantity {
+      font-size: 15px;
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .modal__content {
+    width: 90%;
+  }
+  .modal__left {
+    img {
+      height: 170px;
+      object-fit: cover;
+    }
+  }
+  .modal__right {
+    .modal__name {
+      font-size: 16px;
+    }
+    .modal__description {
+      font-size: 14px;
+    }
+    .modal__quantity {
+      font-size: 14px;
+    }
   }
 }

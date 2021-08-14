@@ -677,6 +677,32 @@ body {
   transition: 0.4s;
 }
 
+@-webkit-keyframes linkFadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes linkFadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
 .section--hidden {
   opacity: 0;
   -webkit-transform: translateY(8rem);
@@ -1505,6 +1531,9 @@ body {
     width: 100%;
     margin: auto;
   }
+  .nav__list .nav__link {
+    opacity: 0;
+  }
   .nav__list .ri-close-fill {
     visibility: visible;
     position: absolute;
@@ -1757,7 +1786,7 @@ html.is-animating .transition-qwe {
 }
 
 .gallery {
-  background-image: url(https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1621361506488-4SUQZSLFUHWJY0Q64GQN/brewery+2.jpg?format=1500w);
+  background-image: url(https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1569107182125-E0FH6NLOPT4HHJFORS2O/steve+anthony.jpg?format=1000w);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1813,6 +1842,29 @@ html.is-animating .transition-qwe {
 
 .img30 img {
   max-height: 610px;
+}
+
+.overlayBox {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.overlayBox.nav__overlay--sub {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .preview-box {

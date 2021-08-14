@@ -67,6 +67,7 @@ body {
           align-items: center;
   font-size: 18px;
   min-height: 8vh;
+  width: 100%;
   background: rgba(200, 200, 200, 0.7);
   position: absolute;
   top: 0;

@@ -6,6 +6,7 @@ const previewImg = previewBox.querySelector('img')
 const closeBox = previewBox.querySelector('.box__close')
 const curentImg = document.querySelector('.current-img')
 const totalImg = document.querySelector('.total-img')
+const overlayBox = document.querySelector('.overlayBox')
 
 window.onload = function () {
   for (let i = 0; i < galleryImgs.length; i++) {
@@ -44,11 +45,13 @@ window.onload = function () {
 
       preview()
       previewBox.classList.add('show')
+      overlayBox.classList.add('nav__overlay--sub')
 
       // CLOSE BTN
       closeBox.addEventListener('click', function () {
         newIndex = clickedImgIndex
         previewBox.classList.remove('show')
+        overlayBox.classList.remove('nav__overlay--sub')
       })
     })
   }

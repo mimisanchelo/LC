@@ -2034,32 +2034,31 @@ html {
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.event__container .film:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  overflow: hidden;
 }
 
 .event__container .film img {
   max-width: 100%;
+  -webkit-transform: translate3d(0, -20px, 0) scale(1.1);
+          transform: translate3d(0, -20px, 0) scale(1.1);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.event__container .film img:hover {
+  -webkit-transform: translate3d(0, 0, 0) scale(1);
+          transform: translate3d(0, 0, 0) scale(1);
 }
 
 .event__container > :first-child {
-  background-image: url(../material/resize/300.jpg);
-  background-repeat: no-repeat;
       grid-template-areas: 300;
 }
 
 .event__container > :nth-child(2) {
-  background-image: url(../material/resize/deadpool.jpg);
-  background-repeat: no-repeat;
       grid-template-areas: dead;
 }
 
 .event__container > :nth-child(3) {
-  background-image: url(../material/resize/joker.jpg);
-  background-repeat: no-repeat;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
@@ -2068,8 +2067,6 @@ html {
 }
 
 .event__container > :last-child {
-  background-image: url(../material/resize/it.jpg);
-  background-repeat: no-repeat;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
