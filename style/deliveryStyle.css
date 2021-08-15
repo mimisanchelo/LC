@@ -401,6 +401,7 @@ body {
 }
 
 .promotion .banner {
+  border-radius: 10px;
   position: relative;
   background: white;
   display: -webkit-box;
@@ -1696,6 +1697,17 @@ body {
     width: 160px;
     background-color: black;
   }
+  .subscribe__container {
+    height: 80%;
+  }
+  .subscribe__container .subscribe__right .subscribe__header {
+    margin: 1rem auto 0;
+    min-width: 300px;
+    max-width: 600px;
+    color: #494949;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -1717,10 +1729,28 @@ body {
   .section__img img {
     max-width: 300px;
   }
+  .promotion {
+    height: 90%;
+  }
 }
 
 @media screen and (max-width: 320px) {
-  .nav__list {
+  .promotion {
+    height: 90%;
+  }
+  .promotion .promo__header {
+    font-size: 1.5rem;
+  }
+  .promotion .banner {
+    padding: 1rem;
+  }
+  .promotion .subscribe {
+    height: 90%;
+  }
+  .promotion .subscribe .subscribe__container {
+    max-height: 90%;
+  }
+  .promotion .nav__list {
     row-gap: 1.3rem;
   }
 }
@@ -2044,6 +2074,7 @@ body {
 }
 
 .promotion .banner {
+  border-radius: 10px;
   position: relative;
   background: white;
   display: -webkit-box;
@@ -3326,6 +3357,17 @@ body {
     width: 160px;
     background-color: black;
   }
+  .subscribe__container {
+    height: 80%;
+  }
+  .subscribe__container .subscribe__right .subscribe__header {
+    margin: 1rem auto 0;
+    min-width: 300px;
+    max-width: 600px;
+    color: #494949;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -3347,10 +3389,28 @@ body {
   .section__img img {
     max-width: 300px;
   }
+  .promotion {
+    height: 90%;
+  }
 }
 
 @media screen and (max-width: 320px) {
-  .nav__list {
+  .promotion {
+    height: 90%;
+  }
+  .promotion .promo__header {
+    font-size: 1.5rem;
+  }
+  .promotion .banner {
+    padding: 1rem;
+  }
+  .promotion .subscribe {
+    height: 90%;
+  }
+  .promotion .subscribe .subscribe__container {
+    max-height: 90%;
+  }
+  .promotion .nav__list {
     row-gap: 1.3rem;
   }
 }
@@ -3989,7 +4049,7 @@ button {
   width: 130px;
   text-align: center;
   display: block;
-  margin-top: 10px;
+  margin-top: 1rem;
   letter-spacing: 1px;
   background-color: #9e1527;
   color: gainsboro;
