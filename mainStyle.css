@@ -1641,8 +1641,8 @@ body {
       opacity: 1;
     }
     100% {
-      -webkit-transform: scale(30);
-              transform: scale(30);
+      -webkit-transform: scale(10);
+              transform: scale(10);
     }
   }
   @keyframes cloud {
@@ -1656,8 +1656,8 @@ body {
       opacity: 1;
     }
     100% {
-      -webkit-transform: scale(30);
-              transform: scale(30);
+      -webkit-transform: scale(10);
+              transform: scale(10);
     }
   }
   .nav__list {
