@@ -1,6 +1,6 @@
 @import 'styles.scss';
 @import '../mainStyle.scss';
-@import 'eventSubStyle.scss';
+@import 'styleEvent.scss';
 @import 'nullstyle.scss';
 
 .delivery {
@@ -142,6 +142,12 @@
   .modal__input {
     width: 75px;
     height: 30px;
+    text-align: center;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
   }
   .modal__add {
     width: 130px;
@@ -178,13 +184,21 @@
     transform: scale(1);
   }
 }
+
 // MEDIA
+
 @media screen and (max-width: 1300px) {
   .modal__content {
     width: 70%;
   }
 }
 @media screen and (max-width: 1024px) {
+  .delivery {
+    background-image: url(https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1621361506488-4SUQZSLFUHWJY0Q64GQN/brewery+2.jpg?format=1500w);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .modal__content {
     width: 80%;
   }
@@ -230,6 +244,10 @@
     }
     .modal__price {
       padding-bottom: 0.5rem;
+    }
+    .span__price {
+      display: flex;
+      margin-right: 0.5rem;
     }
     .modal__quantity {
       padding-bottom: 0.5rem;

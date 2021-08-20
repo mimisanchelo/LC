@@ -30,6 +30,7 @@ body {
 //  UL
 .nav__list--sub {
   display: flex;
+  align-items: center;
   .logohome--nav {
     display: none;
   }
@@ -47,7 +48,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) -5px 0px 10px;
   }
   .nav__link--sub {
-    margin-right: 1.5rem;
+    margin-right: 1.7rem;
     font-weight: 600;
     color: rgb(27, 27, 27);
     position: relative;
@@ -83,8 +84,9 @@ body {
 // SOCIAL LINKS
 .nav__socials--sub {
   font-size: 1.5rem;
+  line-height: 1.5;
   & > a {
-    margin-right: 1.5rem;
+    margin-right: 1rem;
     color: rgb(27, 27, 27);
     cursor: pointer;
     &:hover {
@@ -93,17 +95,20 @@ body {
     &:last-of-type {
       margin-right: 0px;
     }
+    .ri-shopping-cart-2-fill {
+      cursor: pointer;
+    }
   }
 }
 //  TOGGLE NAVBAR
 .nav__toggle--sub {
   color: rgb(27, 27, 27);
-  position: absolute;
+  position: fixed;
   top: 1.5rem;
   right: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
-
+  z-index: 10;
   display: none;
 }
 

@@ -1,6 +1,6 @@
 @import 'styles.scss';
 @import '../mainStyle.scss';
-
+@import 'styleEvent.scss';
 @import 'nullstyle.scss';
 
 .transition-qwe {
@@ -161,6 +161,12 @@ html.is-animating .transition-qwe {
 }
 
 @media screen and (max-width: 1024px) {
+  .gallery {
+    background-image: url(https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1569107182125-E0FH6NLOPT4HHJFORS2O/steve+anthony.jpg?format=1000w);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .gallery__container {
     max-width: 800px;
   }

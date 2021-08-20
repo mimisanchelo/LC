@@ -91,6 +91,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav__list--sub .logohome--nav {
@@ -114,7 +117,7 @@ body {
 }
 
 .nav__list--sub .nav__link--sub {
-  margin-right: 1.5rem;
+  margin-right: 1.7rem;
   font-weight: 600;
   color: #1b1b1b;
   position: relative;
@@ -159,10 +162,11 @@ body {
 
 .nav__socials--sub {
   font-size: 1.5rem;
+  line-height: 1.5;
 }
 
 .nav__socials--sub > a {
-  margin-right: 1.5rem;
+  margin-right: 1rem;
   color: #1b1b1b;
   cursor: pointer;
 }
@@ -175,13 +179,18 @@ body {
   margin-right: 0px;
 }
 
+.nav__socials--sub > a .ri-shopping-cart-2-fill {
+  cursor: pointer;
+}
+
 .nav__toggle--sub {
   color: #1b1b1b;
-  position: absolute;
+  position: fixed;
   top: 1.5rem;
   right: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
+  z-index: 10;
   display: none;
 }
 
