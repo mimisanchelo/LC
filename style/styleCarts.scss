@@ -254,3 +254,30 @@
     }
   }
 }
+@media screen and (max-width: 414px) {
+  .container-cart {
+    bottom: 15%;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container-cart {
+    bottom: 15%;
+    width: 95%;
+    img {
+      width: 75px;
+      padding-right: 0.5rem;
+    }
+  }
+  .item-cart {
+    float: left;
+    .item-info {
+      max-width: 150px;
+    }
+  }
+}
+@media screen and (max-width: 330px) {
+  .container-cart {
+    bottom: 19%;
+  }
+}
