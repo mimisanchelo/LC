@@ -411,11 +411,11 @@ header {
   border: none;
   margin: 5rem 0rem 0rem;
   font-weight: 600;
-
   &:hover {
     background: $secondColorLight;
-
+    border: 1px solid $mainColor;
     color: $mainColor;
+    padding: 9px 19px;
   }
   &:active {
     transform: scale(0.98);

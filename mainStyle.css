@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montaga&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap");
 .navbar__container .nav__list, .navbar__container .nav__list--links, .iframe__container {
@@ -46,6 +47,7 @@ ol {
 
 a {
   text-decoration: none;
+  font-family: 'Montaga', serif;
 }
 
 img,
@@ -59,7 +61,7 @@ input,
 button,
 textarea,
 select {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montaga', serif;
 }
 
 button {
@@ -847,7 +849,9 @@ header {
 
 .btn__download:hover {
   background: gainsboro;
+  border: 1px solid #9e1527;
   color: #9e1527;
+  padding: 9px 19px;
 }
 
 .btn__download:active {
