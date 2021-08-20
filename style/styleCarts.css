@@ -2,8 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montaga&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montaga&display=swap");
 .navbar__container .nav__list, .navbar__container .nav__list--links, .iframe__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,6 +62,7 @@ ol {
 
 a {
   text-decoration: none;
+  font-family: 'Montaga', serif;
 }
 
 img,
@@ -73,7 +76,7 @@ input,
 button,
 textarea,
 select {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montaga', serif;
 }
 
 button {
@@ -861,7 +864,9 @@ header {
 
 .btn__download:hover {
   background: gainsboro;
+  border: 1px solid #9e1527;
   color: #9e1527;
+  padding: 9px 19px;
 }
 
 .btn__download:active {
@@ -1796,6 +1801,7 @@ ol {
 
 a {
   text-decoration: none;
+  font-family: 'Montaga', serif;
 }
 
 img,
@@ -1809,7 +1815,7 @@ input,
 button,
 textarea,
 select {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montaga', serif;
 }
 
 button {
@@ -2084,6 +2090,12 @@ button {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .delivery__notification {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 720px) {
   .cart__navbar {
     bottom: 2.5rem;
@@ -2095,6 +2107,12 @@ button {
   .cart__navbar {
     bottom: 2.5rem;
     right: 0.2rem;
+  }
+  .container-cart:after {
+    right: 4%;
+  }
+  .container-cart:before {
+    right: 4%;
   }
 }
 /*# sourceMappingURL=styleCarts.css.map */

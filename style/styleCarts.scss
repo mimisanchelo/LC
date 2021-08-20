@@ -229,6 +229,11 @@
     right: 1rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .delivery__notification {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 720px) {
   .cart__navbar {
     bottom: 2.5rem;
@@ -239,5 +244,13 @@
   .cart__navbar {
     bottom: 2.5rem;
     right: 0.2rem;
+  }
+  .container-cart {
+    &:after {
+      right: 4%;
+    }
+    &:before {
+      right: 4%;
+    }
   }
 }
