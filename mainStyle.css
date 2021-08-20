@@ -360,6 +360,10 @@ body {
   overflow-x: hidden;
 }
 
+header {
+  overflow-y: hidden;
+}
+
 .preload * {
   -webkit-transition: none !important;
   transition: none !important;
@@ -495,7 +499,7 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(material/resize/entry.jpg);
+  background: url(material/resize/lclclc.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 15%;
@@ -570,7 +574,7 @@ body {
 }
 
 .navbar__container .nav__items {
-  padding-right: 2rem;
+  padding-right: 1.7rem;
 }
 
 .navbar__container .nav__link {
@@ -622,9 +626,9 @@ body {
 .navbar__container .nav__toggle {
   z-index: 3;
   position: fixed;
-  bottom: 1.5rem;
+  top: 1.5rem;
   right: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: none;
   cursor: pointer;
 }
@@ -713,11 +717,18 @@ body {
   background-color: gainsboro;
 }
 
+#reservation {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 calc(100% - 5vh));
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 calc(100% - 5vh));
+  margin-bottom: -5vh;
+}
+
 .reservation__container {
   text-align: center;
   padding: 0rem 2rem;
   line-height: 1.5;
   max-width: 900px;
+  position: relative;
 }
 
 .section__title {
@@ -814,23 +825,29 @@ body {
 }
 
 .btn {
-  background-color: gainsboro;
-  border: 1px solid #c8c8c8;
+  text-align: center;
+  display: block;
+  margin: auto;
+  letter-spacing: 1px;
+  background-color: #9e1527;
+  color: gainsboro;
   border-radius: 10px;
-  color: #9e1527;
   padding: 10px 20px;
-}
-
-.btn__download {
-  margin: 5rem 0rem 0rem;
   font-weight: 600;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  border-radius: 10px;
+}
+
+.btn__download {
+  border: none;
+  margin: 5rem 0rem 0rem;
+  font-weight: 600;
 }
 
 .btn__download:hover {
-  background-color: #c8c8c8;
-  color: #b5172c;
+  background: gainsboro;
+  color: #9e1527;
 }
 
 .btn__download:active {
@@ -1281,6 +1298,9 @@ body {
 
 .subscribe {
   background: #c8c8c8;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vh), 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vh), 0 100%);
+  margin-bottom: -5vh;
 }
 
 .subscribe__container {
@@ -1337,24 +1357,13 @@ body {
 
 .subscribe__right .subscribe__btn {
   width: 130px;
-  text-align: center;
-  display: block;
-  margin: auto;
-  letter-spacing: 1px;
-  background-color: #9e1527;
-  color: gainsboro;
-  border-radius: 10px;
-  padding: 15px 0;
-  font-weight: 600;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .subscribe__right .subscribe__btn:hover {
   background: gainsboro;
   border: 1px solid #9e1527;
   color: #9e1527;
-  padding: 14px 0;
+  padding: 9px 0;
 }
 
 .subscribe__right .subscribe__btn:active {
@@ -1450,6 +1459,12 @@ body {
 }
 
 @media screen and (max-width: 990px) {
+  .header {
+    background: url(material/resize/lclclc.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+  }
   @-webkit-keyframes cloud {
     0% {
       opacity: 0;
@@ -1589,15 +1604,6 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  .header {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url(material/resize/entry.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow-x: hidden;
-  }
   .operation__field .operation__meal {
     max-width: 250px;
     height: auto;

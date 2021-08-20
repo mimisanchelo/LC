@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events</title>
+    <title>Delivery - Louis Cifer Brew Works</title>
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="mainStyle.css" />
     <link rel="stylesheet" href="style/deliveryStyle.css" />
     <link rel="stylesheet" href="style/navbar.css" />
-    <link rel="stylesheet" href="style/eventSubStyle.css" />
+    <link rel="stylesheet" href="style/styleCarts.css" />
     
     <script defer src="script/scriptSecondary.js"></script>
     <script defer src="script/scriptModal.js"></script>
+    <script defer src="script/scriptDelivery.js"></script>
+
   
   </head>
   <body>
@@ -77,18 +79,37 @@
                   ></a>
                 </div>
               </ul>
-              
             </div>
-           
-            
-
         </nav>
 
       </div>
         <div class="nav__toggle--sub">
           <i class="ri-dashboard-fill"></i>
         </div>
+        <div class="cart__navbar">
+          <i class="ri-shopping-cart-2-fill"></i>
+          <span class="cart__number-of-items"></span>
+        </div>
   </header>
+
+  <!-- cart -->
+
+  <div class="container-cart">
+    <div class="cart__items-box">
+      
+    </div>
+    <!-- BTNS -->
+    <div class="end-price">
+      <p>Total</p>
+      <p class="end-price-number">$0 CAD</p>
+    </div>
+    <div class="end-price-btns">
+      <button class="end-price-btn cart-clear" type="button">Clear Cart</button>
+      <button class="end-price-btn cart-checkout" type="button">Checkout</button>
+    </div>                    
+  </div>
+
+  <!-- main content page -->
 
 <main class="section delivery">
   <h1 class="event__header">BEER DELIVERY MINIMUM $40 </h1>
@@ -268,14 +289,14 @@
   <div class="modal" id="modal1">
     <div class="modal__content">
       <div class="modal__left">
-        <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1620928195501-DGHJ60VPX3EFRG24GV0S/Parkside+IPA.jpg?format=1000w" alt="">
+        <img class="modal-img" src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1620928195501-DGHJ60VPX3EFRG24GV0S/Parkside+IPA.jpg?format=1000w" alt="">
       </div>
       <div class="modal__right">
         <h2 class="modal__name">Parkside 473 ml</h2>
         <p class="modal__description">India session ale brewed to be crushable and refreshing, but hoppy enough for those who want a big kick of flavour. Hopped with Vic Secret and El Dorado hops for a tropical citrus profile.</p>
-        <p class="modal__price">$ 5.75 CAD</p>
+        <p class="modal__price">$3.85 CAD</p>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" max="200" value="1">
+          <input class="modal__input" type="number" max="100" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -289,9 +310,9 @@
       <div class="modal__right">
         <h2 class="modal__name">Gothic American Brown Ale 473 ml</h2>
         <p class="modal__description">5.8% ABV/ 36 IBU. Slightly nutty, smooth dark caramel and malt flavours with a lingering bitterness, Citra hops add to a wonderful aroma. </p>
-        <p class="modal__price">$ 3.85 CAD</p>
+        <p class="modal__price">$3.85 CAD</p>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" max="200" value="1">
+          <input class="modal__input" type="number" max="100" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -306,9 +327,9 @@
         <h2 class="modal__name">Original Sin Blond Ale 473 ml</h2>
         <p class="modal__description">4.8% ABV/ 18 IBU.
           A fruity blonde ale with notes of cereal grain, pear and a clean finish. </p>
-        <p class="modal__price">$ 3.80 CAD</p>
+        <p class="modal__price">$3.80 CAD</p>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" max="200" value="1">
+          <input class="modal__input" type="number" max="100" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -323,9 +344,9 @@
         <h2 class="modal__name">Gates of Ale IPA 473 ml</h2>
         <p class="modal__description">5.7% ABV/ 40 IBU.
           A highly approachable IPA featuring low bitterness and a clean citrus finish.</p>
-        <p class="modal__price">$ 4.10 CAD</p>
+        <p class="modal__price">$4.10 CAD</p>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" max="200" value="1">
+          <input class="modal__input" type="number" max="100" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -339,9 +360,9 @@
       <div class="modal__right">
         <h2 class="modal__name">Louis Cifer Lager 473 ml</h2>
         <p class="modal__description">India session ale brewed to be crushable and refreshing, but hoppy enough for those who want a big kick of flavour. Hopped with Vic Secret and El Dorado hops for a tropical citrus profile.</p>
-        <p class="modal__price">$ 5.75 CAD</p>
+        <p class="modal__price">$5.75 CAD</p>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" max="200" value="1">
+          <input class="modal__input" type="number" max="100" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -356,9 +377,9 @@
         <h2 class="modal__name">Dry Irish Stout 473 ml</h2>
         <p class="modal__description">4.4 ABV/28 IBU.
           Smooth stout with flavours and aromas of coffee and dark chocolate with a dry finish. </p>
-        <p class="modal__price">$ 3.80 CAD</p>
+        <p class="modal__price">$3.80 CAD</p>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" max="200" value="1">
+          <input class="modal__input" type="number" max="100" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -375,9 +396,9 @@
           True to English style bitter, this standard English style ale with a slight bitterness that finishes with malty caramel flavours. If you like Rickards Red or Creemore, then you’ll love this!
           
           </p>
-        <p class="modal__price">$ 3.80 CAD</p>
+        <p class="modal__price">$3.80 CAD</p>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" max="200" value="1">
+          <input class="modal__input" type="number" max="100" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -392,9 +413,9 @@
         <h2 class="modal__name">Coconut Lemongrass Thai-PA 473ml</h2>
         <p class="modal__description">6.5% ABV/40 IBU.
           A unique blend of Coconut, lemon grass, and hops in a tropical style beer. </p>
-        <p class="modal__price">$ 3.90 CAD</p>
+        <p class="modal__price">$3.90 CAD</p>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" max="200" value="1">
+          <input class="modal__input" type="number" max="100" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -409,9 +430,9 @@
         <h2 class="modal__name">Witcraft Belgian White 473 ml</h2>
         <p class="modal__description">5% ABV/ 21 IBU.
           A Belgian style wheat beer lightly spiced with orange and coriander. Light and crisp</p>
-        <p class="modal__price">$ 5.75 CAD</p>
+        <p class="modal__price">$3.85 CAD</p>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" max="200" value="1">
+          <input class="modal__input" type="number" max="100" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -425,9 +446,9 @@
       <div class="modal__right">
         <h2 class="modal__name">Glutenberg IPA</h2>
         <p class="modal__description">From Innovative Quebec brewery Glutenberg, a superb and flavourful gluten-free IPA made from millet, buckwheat, corn and black rice. Pale gold in colour with aromas and flavours of cereal grain, grapefruit, tea and apple.</p>
-        <p class="modal__price">$ 6.25 CAD</p>
+        <p class="modal__price">$6.25 CAD</p>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" max="200" value="1">
+          <input class="modal__input" type="number" max="100" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -442,9 +463,9 @@
         <h2 class="modal__name">Puddiecombe Cherry Cider</h2>
         <p class="modal__description">Ripe berry and blossoms with gripping sweet amaretto fudge.
           This adventure starts with currant and juicy plum, the mid palate has light clove and dark berry. Your palate is left with the delicious taste of cherry pie.</p>
-        <p class="modal__price">$ 6.35 CAD</p>
+        <p class="modal__price">$6.35 CAD</p>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" max="200" value="1">
+          <input class="modal__input" type="number" max="100" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -458,9 +479,9 @@
       <div class="modal__right">
         <h2 class="modal__name">Puddiecombe Apple Cider</h2>
         <p class="modal__description">Made from a fresh pressed blend of twelve Ontario apple varieties grown on our family farm. Gluten free with no artificial sugars.</p>
-        <p class="modal__price">$ 6.35 CAD</p>
+        <p class="modal__price">$6.35 CAD</p>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" max="200" value="1">
+          <input class="modal__input" type="number" max="100" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -475,9 +496,9 @@
         <h2 class="modal__name">Puddiecome Apple Cranberry Cider
         </h2>
         <p class="modal__description">Made from a fresh blend of our main stream, twelve variety apple cider and a blush addition of fresh pressed cranberry juice, straight from the bogs of Muskoka.</p>
-        <p class="modal__price">$ 6.35 CAD</p>
+        <p class="modal__price">$6.35 CAD</p>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" max="200" value="1">
+          <input class="modal__input" type="number" max="100" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -492,9 +513,9 @@
         <h2 class="modal__name">Puddiecombe Peach Cider</h2>
         <p class="modal__description">Spiced peach pie with coriander and cinnamon.
           Palate: bursting with fresh juice peach puree with a slight light spice, a balance between light acidity, all spice and mandarin orange leave your palate quenching for more</p>
-        <p class="modal__price">$ 6.35 CAD</p>
+        <p class="modal__price">$6.35 CAD</p>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" max="200" value="1">
+          <input class="modal__input" type="number" max="100" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -508,9 +529,9 @@
       <div class="modal__right">
         <h2 class="modal__name">Louis Cifer Face Mask</h2>
         <p class="modal__description">Louis Cifer Face mask</p>
-        <p class="modal__price">$ 13.50 CAD</p>
+        <p class="modal__price">$13.50 CAD</p>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" max="200" value="1">
+          <input class="modal__input" type="number" max="25" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -526,9 +547,9 @@
         <p class="modal__description">Purchasing this digital gift card creates a unique code. The gift card recipient can enter this code at checkout to subtract the gift card value from their order total.
 
         This gift card never expires.</p>
-        <p class="modal__price">from $ 25.00 CAD</p>
+       <span class="span__price">from<p class="modal__price"> $25.00 CAD</p></span>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" step="5" max="100" value="25">
+          <input class="modal__input" type="number" step="5" max="100" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -542,9 +563,9 @@
       <div class="modal__right">
         <h2 class="modal__name">Villa Sandi, Pinot Grigio</h2>
         <p class="modal__description"></p>
-        <p class="modal__price">$ 27.00 CAD</p>
+        <p class="modal__price">$27.00 CAD</p>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" max="100" value="1">
+          <input class="modal__input" type="number" max="25" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -558,9 +579,9 @@
       <div class="modal__right">
         <h2 class="modal__name">Leaping Horse Cabernet</h2>
         <p class="modal__description">A luscious rich California Cab with chocolate, cherry, spice and black currant.</p>
-        <p class="modal__price">$ 29.00 CAD</p>
+        <p class="modal__price">$29.00 CAD</p>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" max="100" value="1">
+          <input class="modal__input" type="number" max="25" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -576,9 +597,9 @@
         <p class="modal__description">South of France.
           The robe is a beautiful garnet red. Fruit ﬁlled aromas with raspberry and red berries. On the palate, smooth and elegant.
           </p>
-        <p class="modal__price">$ 5.75 CAD</p>
+        <p class="modal__price">$25.00 CAD</p>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" max="100" value="1">
+          <input class="modal__input" type="number" max="25" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -592,9 +613,9 @@
       <div class="modal__right">
         <h2 class="modal__name">Laurent Miquel Rose</h2>
         <p class="modal__description">Elegant pale pink colour. Fresh raspberry aromas and a hint of citrus. Crisp on the palate with a soft fruity finish.</p>
-        <p class="modal__price">$ 29.00 CAD</p>
+        <p class="modal__price">$29.00 CAD</p>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" max="100" value="1">
+          <input class="modal__input" type="number" max="25" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -608,9 +629,9 @@
       <div class="modal__right">
         <h2 class="modal__name">Pint Glass</h2>
         <p class="modal__description"></p>
-        <p class="modal__price">$ 9.00 CAD</p>
+        <p class="modal__price">$9.00 CAD</p>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" max="100" value="1">
+          <input class="modal__input" type="number" max="25" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -624,9 +645,9 @@
       <div class="modal__right">
         <h2 class="modal__name">5oz Taster Glass</h2>
         <p class="modal__description"></p>
-        <p class="modal__price">$ 5.75 CAD</p>
+        <p class="modal__price">$5.75 CAD</p>
           <label class="modal__quantity" for="quantity">Quantity: </label>
-          <input class="modal__input" type="number" max="100" value="1">
+          <input class="modal__input" type="number" max="25" value="1">
           <button class="modal__add">Add to Cart</button>
         <i class="ri-close-line"></i>
       </div>
@@ -634,8 +655,12 @@
   </div>
 
 
+<div class="delivery__notification">
+  
+</div>
 </main>
   
+
     <section class="section footer">
       <div class="section__img">
         <a class="footer__logo--home" href="/index.html" ><img src="material/resize/logolong350.png" alt="" /></a>
