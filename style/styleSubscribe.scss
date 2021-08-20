@@ -151,7 +151,7 @@ html {
     }
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
   .subscribe__container {
     .subscribe__left {
       img {
@@ -168,6 +168,30 @@ html {
     }
     button {
       margin: 0rem auto;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .subscribe__container {
+    height: 90vh;
+    .subscribe__left {
+      img {
+        width: 100px;
+      }
+    }
+  }
+  .subscribe__right {
+    button {
+      margin: 0.5rem auto 0.5rem;
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .subscribe__container {
+    .subscribe__left {
+      img {
+        display: none;
+      }
     }
   }
 }
