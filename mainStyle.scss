@@ -44,7 +44,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 800px;
+  max-width: 700px;
   z-index: 1000;
 
   &.hidden {
@@ -1092,18 +1092,32 @@ header {
   }
 
   .promotion {
-    height: 90%;
+    max-height: 85vh;
+    max-width: 95%;
   }
 }
 @media screen and (max-width: 320px) {
   .promotion {
-    height: 90%;
     .promo__header {
       font-size: 1.5rem;
     }
     .banner {
-      padding: 1rem;
+      padding: 0.5rem;
+      width: 300px;
+      max-height: 90vh;
+      .promo__header {
+        padding-top: 2rem;
+        font-size: 24px;
+      }
+      .promo__subheader {
+        padding: 0.5rem 0 1rem;
+      }
+      .promo__content {
+        margin: 1rem auto;
+        max-width: 300px;
+      }
     }
+
     .subscribe {
       height: 90%;
       .subscribe__container {
