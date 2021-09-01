@@ -1752,14 +1752,12 @@ header {
     max-width: 300px;
   }
   .promotion {
-    height: 90%;
+    max-height: 85wvh;
+    max-width: 95vw;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .promotion {
-    height: 90%;
-  }
   .promotion .promo__header {
     font-size: 1.5rem;
   }
@@ -3483,14 +3481,12 @@ header {
     max-width: 300px;
   }
   .promotion {
-    height: 90%;
+    max-height: 85wvh;
+    max-width: 95vw;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .promotion {
-    height: 90%;
-  }
   .promotion .promo__header {
     font-size: 1.5rem;
   }
@@ -3741,6 +3737,15 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 100vh;
 }
 
@@ -3894,6 +3899,7 @@ html {
 @media screen and (max-width: 630px) {
   .subscribe__container {
     margin: 0rem auto;
+    gap: 0rem;
     width: 80%;
   }
   .subscribe__container .subscribe__right {
@@ -3931,7 +3937,7 @@ html {
 
 @media screen and (max-width: 375px) {
   .subscribe__container {
-    height: 90vh;
+    max-height: 85vh;
   }
   .subscribe__container .subscribe__left img {
     width: 100px;

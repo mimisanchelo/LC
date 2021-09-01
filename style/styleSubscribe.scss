@@ -14,6 +14,9 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
 }
 .subscribe__container {
@@ -133,6 +136,7 @@ html {
 @media screen and (max-width: 630px) {
   .subscribe__container {
     margin: 0rem auto;
+    gap: 0rem;
     width: 80%;
     .subscribe__right {
       flex-basis: 70%;
@@ -173,7 +177,7 @@ html {
 }
 @media screen and (max-width: 375px) {
   .subscribe__container {
-    height: 90vh;
+    max-height: 85vh;
     .subscribe__left {
       img {
         width: 100px;
