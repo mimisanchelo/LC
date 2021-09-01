@@ -92,6 +92,32 @@ html {
   }
 }
 
+// ///////////////////////////////////////////////THANK YOU PAGE
+
+.thanks {
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 15px;
+  background: #304352;
+  background: linear-gradient(to bottom, #d7d2ccdd 40%, $mainColor);
+  img {
+    padding-bottom: 2rem;
+  }
+  h2 {
+    text-align: center;
+  }
+  h3 {
+    padding: 2rem 0 1rem;
+  }
+  p {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .subscribe__container {
     margin: 0rem auto 1rem;

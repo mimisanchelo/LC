@@ -1752,8 +1752,8 @@ header {
     max-width: 300px;
   }
   .promotion {
-    max-height: 85wvh;
-    max-width: 95vw;
+    max-height: 85vh;
+    max-width: 95%;
   }
 }
 
@@ -1762,7 +1762,20 @@ header {
     font-size: 1.5rem;
   }
   .promotion .banner {
-    padding: 1rem;
+    padding: 0.5rem;
+    width: 300px;
+    max-height: 90vh;
+  }
+  .promotion .banner .promo__header {
+    padding-top: 2rem;
+    font-size: 24px;
+  }
+  .promotion .banner .promo__subheader {
+    padding: 0.5rem 0 1rem;
+  }
+  .promotion .banner .promo__content {
+    margin: 1rem auto;
+    max-width: 300px;
   }
   .promotion .subscribe {
     height: 90%;
@@ -3481,8 +3494,8 @@ header {
     max-width: 300px;
   }
   .promotion {
-    max-height: 85wvh;
-    max-width: 95vw;
+    max-height: 85vh;
+    max-width: 95%;
   }
 }
 
@@ -3491,7 +3504,20 @@ header {
     font-size: 1.5rem;
   }
   .promotion .banner {
-    padding: 1rem;
+    padding: 0.5rem;
+    width: 300px;
+    max-height: 90vh;
+  }
+  .promotion .banner .promo__header {
+    padding-top: 2rem;
+    font-size: 24px;
+  }
+  .promotion .banner .promo__subheader {
+    padding: 0.5rem 0 1rem;
+  }
+  .promotion .banner .promo__content {
+    margin: 1rem auto;
+    max-width: 300px;
   }
   .promotion .subscribe {
     height: 90%;
@@ -3851,6 +3877,44 @@ html {
 .subscribe__container .sub__content {
   text-align: center;
   margin-bottom: 2rem;
+}
+
+.thanks {
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  border-radius: 15px;
+  background: #304352;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #d7d2ccdd), to(#9e1527));
+  background: linear-gradient(to bottom, #d7d2ccdd 40%, #9e1527);
+}
+
+.thanks img {
+  padding-bottom: 2rem;
+}
+
+.thanks h2 {
+  text-align: center;
+}
+
+.thanks h3 {
+  padding: 2rem 0 1rem;
+}
+
+.thanks p {
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
