@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart - Louis Cifer Brew Works</title>
+    <link rel="stylesheet" href="mainStyle.css" />
+    <link rel="stylesheet" href="style/navbar.css" />
+    <link rel="stylesheet" href="style/nullstyle.css" />
+    <link rel="stylesheet" href="style/styles.css" />
+    <link rel="stylesheet" href="styleCart.css" />
+    <link rel="stylesheet" href="style/footerStyle.css" />
+    <script defer src="script/scriptCart.js"></script>
+  </head>
+  <body>
+      <!-- NAVBAR -->
+      <!-- <header>
+        <div class="nav__over">
+          <nav class="navbar__container--sub" id="navbar-container">
+  
+              <div class="nav__items--sub">
+                <a class="logohome--sub" href="#"
+                  ><img src="material/resize/logolong170.png" alt=""
+                /></a>
+              </div>
+  
+              <div class="navbar__links--sub">
+                <ul class="nav__list--sub">
+                  <li class="nav__items--sub"><a class="logohome--nav" href="/index.html"
+                  ><img src="material/resize/logolong300.png" alt=""
+                  /></a></li>
+                  <li class="nav__items--sub">
+                    <a href="/index.html" class="nav__link--sub"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav__items--sub">
+                    <a href="/index.html#reservation" class="nav__link--sub"
+                      >Reservation</a
+                    >
+                  </li>
+                  <li class="nav__items--sub">
+                    <a href="/index.html#hour" class="nav__link--sub">Hours</a>
+                  </li>
+                  <li class="nav__items--sub">
+                    <a href="/index.html#menu" class="nav__link--sub">Menu</a>
+                  </li>
+                  <li class="nav__items--sub">
+                    <a href="/index.html#about" class="nav__link--sub">About</a>
+                  </li>
+                  <li class="nav__items--sub">
+                    <a href="/gallery.html" class="nav__link--sub">Gallery</a>
+                  </li>
+                  <li class="nav__items--sub">
+                    <a href="/delivery.html" class="nav__link--sub">Delivery</a>
+                  </li>
+                  <li class="nav__items--sub">
+                    <a href="/events.html" class="nav__link--sub ">Events</a>
+                  </li>
+                  <li class="nav__items--sub">
+                    <a href="/subscribe.html" class="nav__link--sub">Subscribe</a>
+                  </li>
+                  <i class="ri-close-fill nav--close"></i>
+                  <div class="nav__socials--sub">
+                    <a href="https://www.facebook.com/LouisCiferBrewWorks" target="__blank"
+                        ><i class="icon ri-facebook-circle-fill"></i
+                    ></a>
+                    <a href="https://www.instagram.com/louisciferbw" target="__blank"
+                        ><i class=" icon ri-instagram-line"></i
+                    ></a>
+                    <a href="/cart.html"
+              ><i class="ri-shopping-cart-2-fill"></i></a>
+                  </div>
+                </ul>
+                
+              </div>
+             
+              
+  
+          </nav>
+  
+        </div>
+          <div class="nav__toggle--sub">
+            <i class="ri-dashboard-fill"></i>
+          </div>
+    </header> -->
+
+    <!-- CART -->
+
+    <section class="section cart__container">
+        <div class="header__cart">
+            <h2>Your shopping cart</h2>
+            <p>You have <span class="cart__total-items">2</span> items in your cart</p>
+        </div>
+        <div class="cart__box">
+            <div class="cart__table">
+                <h4 class="cart__item">Item</h4>
+                <h4 class="cart__quality">Quantity</h4>
+                <h4 class="cart__total">Total</h4>
+            </div>
+            <div class="cart__chosen-product">
+                <div class="chosen__item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1620928195501-DGHJ60VPX3EFRG24GV0S/Parkside+IPA.jpg?format=1000w" alt="">
+                    <div class="chosen__info">
+                    <h5>Parkside 473 ml</h5>
+                    <p><span class="chosen__price-item">$3.85</span> CAD</p>
+                    <button class="btn__remove" type="button">Remove</button>
+                </div>
+                </div>
+                <div class="chosen__quantity">
+                    <input class="cart__total-quantity" type="number" id="number" min="1" max="200" name="quantity" value="12">
+                </div>
+              
+                <div class="chosen__total">
+                    <h3>$ <span class="cart__total-price">46.2</span> CAD</h3>
+                </div>
+            </div>
+            <div class="cart__chosen-product">
+                <div class="chosen__item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1585245672919-E2QDAAMBLP97NTDHHTTI/IMG_8985.jpg?format=500w" alt="">
+                    <div class="chosen__info">
+                      <h5>Laurent Miquel, Vendages Nocturne Rouge</h5>
+                      <p><span class="chosen__price-item">$3.80</span> CAD</p>
+                      <button class="btn__remove" type="button">Remove</button>
+                  </div>
+                </div>
+                <div class="chosen__quantity">
+                    <input class="cart__total-quantity" type="number" id="number" min="1" max="200" name="quantity" value="12" >
+                </div>
+              
+                <div class="chosen__total">
+                    <h3>$ <span class="cart__total-price">45.6</span> CAD</h3>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="cart__submit">
+            <div class="sumbit__info-container">
+                <div class="cart__submit-info">
+                    <h4 class="cart__total-price">Order Total</h4>
+                    <p><span class="cart__total-items">2</span> items</p>
+                </div>
+                <div class="cart__final-price">
+                    <p><span class="final-price">91.8</span> CAD</p>
+                </div>
+            </div>
+            <button class="cart__submit-btn" type="button">Checkout</button>
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <section class="section footer">
+        <div class="section__img">
+          <a class="footer__logo--home" href="/index.html" ><img src="material/resize/logolong350.png" alt="" /></a>
+        </div>
+        <div class="footer-wrap">
+          <div class="footer__info">
+            <h3 class="footer__contact--black">Contact</h3> 
+            <div class="footer__list">
+              <p class="footer__items"><h4 class="footer__contact--black">Location:</h4>417 Danforth Ave, </br> Toronto, ON, Canada,</br>  M4K 1P1</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d303.3100570432064!2d-79.35136001200999!3d43.67754140944136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cc884b618405%3A0x2e6f236a8e724eb1!2sLouis%20Cifer%20Brew%20Works!5e0!3m2!1sen!2sru!4v1642668633958!5m2!1sen!2sru" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              <p class="footer__items"><h4 class="footer__contact--black">Phone:</h4>+1 (647) 1234123</p>
+              <p class="footer__items"><h4 class="footer__contact--black">Email:</h4>louiscifer@gmail.com</p>
+            </div>
+          </div>
+          <div class="footer__info">
+            <h3 class="footer__contact--black">Info</h3>
+            <ul class="footer__list"> 
+              <li class="footer__items">
+                <a href="/index.html#about" class="footer__link">About</a>
+              </li>
+              <li class="footer__items">
+                <a href="/index.html#hour" class="footer__link">Hours</a>
+              </li>
+              <li class="footer__items">
+                <a href="/index.html#menu" class="footer__link">Menu</a>
+              </li>
+              <li class="footer__items">
+                <a href="/gallery.html" class="footer__link">Gallery</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__info">
+            <h3 class="footer__contact--black">Things to Do</h3> 
+            <ul class="footer__list">
+  
+              <li class="footer__items">
+                <a href="/index.html#reservation" class="footer__link">Reservation</a>
+              </li>
+              <li class="footer__items">
+                <a href="/events.html" class="footer__link">Events</a>
+              </li>
+              <li class="footer__items">
+                <a href="/delivery.html" class="footer__link">Delivery</a>
+              </li>
+              <li class="footer__items">
+                <a href="/subscribe.html" class="footer__link">Subscribe</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__socials">
+            <h3 class="footer__contact--black">Social Links</h3>
+            <div class="footer__social--icons">
+              <a href="https://www.facebook.com/LouisCiferBrewWorks" target="__blank"
+              ><i class="ri-facebook-circle-fill"></i
+            ></a>
+            <a href="https://www.instagram.com/louisciferbw" target="__blank"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+  </body>
+</html>
