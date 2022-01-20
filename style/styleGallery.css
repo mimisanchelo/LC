@@ -2,14 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montaga&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montaga&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montaga&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montaga&display=swap");
 .navbar__container .nav__list, .navbar__container .nav__list--links, .iframe__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,6 +70,7 @@ ol {
 
 a {
   text-decoration: none;
+  font-family: 'Montaga', serif;
 }
 
 img,
@@ -79,7 +84,7 @@ input,
 button,
 textarea,
 select {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montaga', serif;
 }
 
 button {
@@ -867,7 +872,9 @@ header {
 
 .btn__download:hover {
   background: gainsboro;
+  border: 1px solid #9e1527;
   color: #9e1527;
+  padding: 9px 19px;
 }
 
 .btn__download:active {
@@ -1745,19 +1752,30 @@ header {
     max-width: 300px;
   }
   .promotion {
-    height: 90%;
+    max-height: 85vh;
+    max-width: 95%;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .promotion {
-    height: 90%;
-  }
   .promotion .promo__header {
     font-size: 1.5rem;
   }
   .promotion .banner {
-    padding: 1rem;
+    padding: 0.5rem;
+    width: 300px;
+    max-height: 90vh;
+  }
+  .promotion .banner .promo__header {
+    padding-top: 2rem;
+    font-size: 24px;
+  }
+  .promotion .banner .promo__subheader {
+    padding: 0.5rem 0 1rem;
+  }
+  .promotion .banner .promo__content {
+    margin: 1rem auto;
+    max-width: 300px;
   }
   .promotion .subscribe {
     height: 90%;
@@ -1826,6 +1844,7 @@ ol {
 
 a {
   text-decoration: none;
+  font-family: 'Montaga', serif;
 }
 
 img,
@@ -1839,7 +1858,7 @@ input,
 button,
 textarea,
 select {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montaga', serif;
 }
 
 button {
@@ -2542,7 +2561,9 @@ header {
 
 .btn__download:hover {
   background: gainsboro;
+  border: 1px solid #9e1527;
   color: #9e1527;
+  padding: 9px 19px;
 }
 
 .btn__download:active {
@@ -3420,19 +3441,30 @@ header {
     max-width: 300px;
   }
   .promotion {
-    height: 90%;
+    max-height: 85vh;
+    max-width: 95%;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .promotion {
-    height: 90%;
-  }
   .promotion .promo__header {
     font-size: 1.5rem;
   }
   .promotion .banner {
-    padding: 1rem;
+    padding: 0.5rem;
+    width: 300px;
+    max-height: 90vh;
+  }
+  .promotion .banner .promo__header {
+    padding-top: 2rem;
+    font-size: 24px;
+  }
+  .promotion .banner .promo__subheader {
+    padding: 0.5rem 0 1rem;
+  }
+  .promotion .banner .promo__content {
+    margin: 1rem auto;
+    max-width: 300px;
   }
   .promotion .subscribe {
     height: 90%;
@@ -3477,6 +3509,7 @@ ol {
 
 a {
   text-decoration: none;
+  font-family: 'Montaga', serif;
 }
 
 img,
@@ -3490,7 +3523,7 @@ input,
 button,
 textarea,
 select {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montaga', serif;
 }
 
 button {
@@ -3505,7 +3538,7 @@ html {
   background: url(https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1545851756186-Z4DQHO96KWOUIJVNT66C/47578325_369323780506176_1010760784348708864_n.jpg?format=2500w);
   background-position: 50% 6%;
   background-repeat: no-repeat;
-  background-attachment: fixedd;
+  background-attachment: fixed;
   background-size: cover;
   min-height: 100vh;
 }
@@ -3524,7 +3557,7 @@ html {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #d7d2ccdd), to(#9e1527));
   background: linear-gradient(to bottom, #d7d2ccdd 40%, #9e1527);
   border-radius: 10px;
-  margin: 2rem auto;
+  margin: auto;
   padding: 1.5rem;
   width: 95%;
   max-width: 1010px;
@@ -3559,51 +3592,45 @@ html {
   text-shadow: black 1px 1px 0, black -1px -1px 0;
   font-size: 20px;
   font-weight: 600;
+  overflow: hidden;
 }
 
 .event__container .film {
   position: relative;
   width: 100%;
   border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
   overflow: hidden;
 }
 
-.event__container .film img {
-  max-width: 100%;
-  -webkit-transform: translate3d(0, -20px, 0) scale(1.1);
-          transform: translate3d(0, -20px, 0) scale(1.1);
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.event__container .film img:hover {
-  -webkit-transform: translate3d(0, 0, 0) scale(1);
-          transform: translate3d(0, 0, 0) scale(1);
-}
-
 .event__container > :first-child {
+  background-image: url(../material/resize/300.jpg);
       grid-template-areas: 300;
 }
 
 .event__container > :nth-child(2) {
+  background-image: url(../material/resize/deadpool.jpg);
       grid-template-areas: dead;
 }
 
 .event__container > :nth-child(3) {
+  background-image: url(../material/resize/joker.jpg);
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
   grid-area: joker;
-  max-height: 720px;
 }
 
 .event__container > :last-child {
+  background-image: url(http://hautecultureuk.com/wp-content/uploads/2017/09/it-2017-movie-poster.jpg);
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: it;
+}
+
+.event__container > :last-child img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 1078px) {
@@ -3620,9 +3647,24 @@ html {
         grid-template-rows: repeat(2fr);
         grid-template-areas: '300 dead' 'it  joker';
   }
+  .film:last-child {
+    background-image: url(https://www.indiewire.com/wp-content/uploads/2017/08/it.jpg?w=640);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .film:nth-child(3) {
+    background-image: url(https://www.indiewire.com/wp-content/uploads/2019/09/joker-1.jpg);
+    background-position: 35% 50%;
+  }
 }
 
 @media screen and (max-width: 800px) {
+  .event {
+    background: url(https://images.squarespace-cdn.com/content/v1/53ce954de4b0945af8803fe9/1545851756186-Z4DQHO96KWOUIJVNT66C/47578325_369323780506176_1010760784348708864_n.jpg?format=2500w);
+    background-position: 50% 6%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .event__container {
     -ms-grid-columns: 300px 300px;
         grid-template-columns: 300px 300px;
@@ -3634,11 +3676,11 @@ html {
 
 @media screen and (max-width: 700px) {
   .event__container {
-    margin: auto;
+    margin: 0 auto;
     -ms-grid-columns: 300px;
         grid-template-columns: 300px;
-    -ms-grid-rows: (400px)[3] 300px;
-        grid-template-rows: repeat(3, 400px) 300px;
+    -ms-grid-rows: (400px)[4];
+        grid-template-rows: repeat(4, 400px);
         grid-template-areas: '300' 'dead' 'joker ' ' it';
   }
   .event__container .film {
@@ -3653,6 +3695,7 @@ html {
 
 @media screen and (max-width: 360px) {
   .event__container {
+    padding: 1rem;
     -ms-grid-columns: 260px;
         grid-template-columns: 260px;
   }
@@ -3690,6 +3733,7 @@ ol {
 
 a {
   text-decoration: none;
+  font-family: 'Montaga', serif;
 }
 
 img,
@@ -3703,7 +3747,7 @@ input,
 button,
 textarea,
 select {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montaga', serif;
 }
 
 button {

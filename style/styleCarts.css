@@ -1744,19 +1744,30 @@ header {
     max-width: 300px;
   }
   .promotion {
-    height: 90%;
+    max-height: 85vh;
+    max-width: 95%;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .promotion {
-    height: 90%;
-  }
   .promotion .promo__header {
     font-size: 1.5rem;
   }
   .promotion .banner {
-    padding: 1rem;
+    padding: 0.5rem;
+    width: 300px;
+    max-height: 90vh;
+  }
+  .promotion .banner .promo__header {
+    padding-top: 2rem;
+    font-size: 24px;
+  }
+  .promotion .banner .promo__subheader {
+    padding: 0.5rem 0 1rem;
+  }
+  .promotion .banner .promo__content {
+    margin: 1rem auto;
+    max-width: 300px;
   }
   .promotion .subscribe {
     height: 90%;
